@@ -320,6 +320,22 @@ body {
         padding: 20px;
     }
 }
+/* Estilo para los botones "Ver Más" */
+.cta-button {
+    display: inline-block;
+    background-color: var(--color-pink-pastel);
+    color: var(--color-dark-text);
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none; /* Quita el subrayado del enlace */
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e0a7c4; /* Un tono más oscuro de rosa para el efecto hover */
+}
 
 
 
