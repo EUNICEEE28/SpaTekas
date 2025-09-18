@@ -1,3 +1,176 @@
+* { 
+  margin: 0;
+  padding: 0; 
+  box-sizing: border-box; 
+}
+
+body {
+  overflow-x: hidden; /* Oculta scroll horizontal */
+}
+
+header { 
+  background: black; 
+  color: white; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  position: relative; 
+} 
+
+header img { 
+  position: absolute; 
+  height: 160px; 
+  left: 30px; 
+  padding: 0 0 9px 9px; 
+}
+
+.titulo { 
+  text-align: center; 
+  font-size: 2em; 
+  font-weight: bold; 
+  padding: 20px 0 5px 0; 
+}
+
+.lema { 
+  text-align: center;
+  font-size: 1.2em; 
+  font-style: italic; 
+  padding: 5px 0 20px 0; 
+}
+
+.carrusel img { 
+  margin: 1px; 
+  width: 100%; 
+  height: 680px; 
+}
+
+.card-container { 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  padding: 20px; 
+}
+
+.card { 
+  width: 300px; 
+  border-radius: 10px; 
+  margin: 10px; 
+  position: relative; 
+  text-align: center; 
+}
+
+.card img { 
+  width: 100%; 
+  height: 430px; 
+  object-fit: cover; 
+}
+
+.titulo-tratamientos { 
+  text-align: center; 
+  font-size: 1.5em; 
+  font-weight: bold; 
+  margin: 30px 0 0 0; 
+}
+
+.btn-img { 
+  margin-top: 10px; 
+  padding: 10px; 
+  border-radius: 5px; 
+  border: 2px solid #a87932; 
+  background: none; 
+  display: inline-block; 
+  transform: translateY(-150%); 
+}
+
+.btn-img a { 
+  text-decoration: none; 
+  color: white; 
+}
+
+h4 { 
+  transform: translateY(164%); 
+  color: white; 
+}
+
+.nav { 
+  display: grid; 
+  grid-template-columns: repeat(6, 1fr); 
+  background: #eac1c1; 
+  text-align: center; 
+  width: 100%; 
+  margin: 0 auto; 
+  box-sizing: border-box; 
+}
+
+.nav-item {
+  padding: 1rem; 
+  text-decoration: none; 
+  color: #fff; 
+  position: relative; 
+  transition: background 0.3s ease; 
+}
+
+.nav-item:hover { 
+  background: #dd9e9e; 
+}
+
+.nav-item::before { 
+  content: ""; 
+  position: absolute; 
+  bottom: 0; left: 50%; 
+  transform: translateX(-50%); 
+  width: 0%; 
+  height: 2px; 
+  background: #fff; 
+  transition: width 0.3s ease; 
+}
+
+.nav-item:hover::before { 
+  width: 80%; 
+}
+
+@media (max-width: 600px) { 
+  .nav { grid-template-columns: 1fr; } 
+}
+
+.footer { 
+  background-color: black; 
+  color: white; 
+  padding: 15px; 
+  font-size: 16px; 
+  height: 180px; 
+}
+
+.redes-vertical { 
+  transform: translateX(20%); 
+  display: flex; 
+  flex-direction: column; /* Coloca los íconos en columna */ 
+  align-items: center; 
+  gap: 10px; 
+  margin: 10px 0; 
+}
+
+.red-item { 
+  display: flex; 
+  align-items: center; 
+  gap: 10px; /* Espacio entre ícono y texto */ 
+}
+
+.icono-red { 
+  width: 35px; 
+  height: 28px; 
+}
+
+.icono-red-f { 
+  width: 50px; 
+  height: 30px; 
+} 
+
+.derechos { 
+  text-align: left; 
+  transform: translateY(-90%); 
+    
+}
 /* Paleta de Colores muy sencilla */
 :root {
     --color-pink-pastel: #f8c8dc;
@@ -147,3 +320,4 @@ body {
         padding: 20px;
     }
 }
+
