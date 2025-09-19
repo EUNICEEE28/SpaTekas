@@ -104,8 +104,9 @@ h4 {
 }
 
 .nav { 
-  display: grid; 
-  grid-template-columns: repeat(6, 1fr); 
+  display: flex; /* Usamos flexbox para una mejor adaptabilidad */
+  flex-wrap: wrap; /* Permite que los elementos pasen a la siguiente línea si no caben */
+  justify-content: space-around; /* Distribuye el espacio entre los elementos */
   background: #eac1c1; 
   text-align: center; 
   width: 100%; 
@@ -118,7 +119,8 @@ h4 {
   text-decoration: none; 
   color: #fff; 
   position: relative; 
-  transition: background 0.3s ease; 
+  transition: background 0.3s ease;
+  flex-grow: 1; /* Permite que los elementos se estiren para llenar el espacio disponible */
 }
 
 .nav-item:hover { 
@@ -141,7 +143,9 @@ h4 {
 }
 
 @media (max-width: 37.5rem) {
-  .nav { grid-template-columns: 1fr; } 
+  .nav-item { 
+    flex-basis: 100%; /* Cada elemento ocupa su propia línea en pantallas pequeñas */
+  }
 }
 
 .footer { 
@@ -371,6 +375,7 @@ body {
         padding: 20px;
     }
 }
+
 
 
 
