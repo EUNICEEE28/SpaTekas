@@ -1,1 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
 
+</head>
+<body>
+    <header>
+        <h2 class="titulo">SPA TKAS</h2>
+        <p class="lema">"Relajación y bienestar en cada detalle"</p>
+        <img src="imagen/LOGO.svg" alt=""></div>
+        <nav class="nav">
+            <a href="index.html" class="nav-item">Inicio</a>
+            <a href="servicios.html" class="nav-item">Servicios</a>
+            <a href="#" class="nav-item">Galeria</a>
+            <a href="#" class="nav-item">Reseñas</a>
+            <a href="#" class="nav-item">Reservas</a>
+            <a href="#" class="nav-item">Contacto</a>
+        </nav>
+    </header>
+    
+    <main>
+      <section class="gallery">
+        <img src="imagen/1.jpg" alt="Masaje relajante">
+        <img src="imagen/2.jpg" alt="Tratamiento facial">
+        <img src="imagen/3.jpg" alt="Aromaterapia en spa">
+        <img src="imagen/4.jpg" alt="Piedras calientes">
+      </section>
+      
+      <div class="container">
+        <form id="formReserva">
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+          <label for="correo">Correo electrónico</label>
+          <input type="email" id="correo" name="correo" placeholder="ejemplo@email.com" required>
+          
+          <label for="telefono">Teléfono</label>
+          <input type="tel" id="telefono" name="telefono" placeholder="0000-0000" required>
+          <label for="servicio">Selecciona un servicio</label>
+          <select id="servicio" name="servicio" required>
+            <option value="">-- Elige un servicio --</option>
+            <option value="masaje">💆 Masaje relajante</option>
+            <option value="facial">🌸 Tratamiento facial</option>
+            <option value="manicure">💅 Manicure y pedicure</option>
+            <option value="spa">🧖 Día completo en el spa</option>
+          </select>
+          
+          <label for="fecha">Fecha</label>
+          <input type="date" id="fecha" name="fecha" required>
+          
+          <label for="hora">Hora</label>
+          <input type="time" id="hora" name="hora" required>
+          
+          <label for="mensaje">Notas adicionales (opcional)</label>
+          <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe alguna preferencia o comentario"></textarea>
+          <button type="submit">Reservar ahora</button>
+        </form>
+        
+        <div id="mensajeConfirmacion">
+          ✅ ¡Tu reserva fue enviada con éxito!  
+          Nos pondremos en contacto contigo pronto. 💖
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+        <p>WhatsApp: 7793-3035</p>
+
+        <div class="redes-vertical">
+            <div class="red-item">
+                <span>@SPA TKAS</span>
+                <img src="imagenes/tiktok.png" alt="TikTok" class="icono-red">
+            </div>
+            <div class="red-item">
+                <span>@SPA TKAS</span>
+                <img src="imagenes/facebook.png" alt="Facebook" class="icono-red-f">
+            </div>
+            <div class="red-item">
+                <span>@SPA TKAS</span>
+                <img src="imagenes/instagram.png" alt="Instagram" class="icono-red">
+            </div>
+        </div>
+
+        <p>© 2025 SPA TKAS. Todos los derechos reservados.</p>
+    </footer>
+
+  <script src="js/app.js"></script>
+
+
+</body>
