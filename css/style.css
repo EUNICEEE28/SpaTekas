@@ -19,52 +19,52 @@ header {
 
 header img { 
   position: absolute; 
-  height: 160px; 
+  height: 10rem; /* 160px convertido a rem (160 / 16) */
   left: 5%; 
-  padding: 0 0 9px 9px; 
+  padding: 0 0 0.5625rem 0.5625rem; /* 9px convertido a rem (9 / 16) */
 }
 
 .titulo { 
   text-align: center; 
   font-size: 2em; 
   font-weight: bold; 
-  padding: 20px 0 5px 0; 
+  padding: 1.25rem 0 0.3125rem 0; /* 20px y 5px convertidos a rem */
 }
 
 .lema { 
   text-align: center;
   font-size: 1.2em; 
   font-style: italic; 
-  padding: 5px 0 20px 0; 
+  padding: 0.3125rem 0 1.25rem 0; /* 5px y 20px convertidos a rem */
 }
 
 .imagen img { 
-  margin: 1px;
+  margin: 0.0625rem; /* 1px convertido a rem */
   width: 100%;
-  height: auto; /* Permite que la altura se ajuste proporcionalmente al ancho */
-  max-height: 120vh; /* Opcional: limita la altura para evitar que ocupe toda la pantalla */
+  height: auto;
+  max-height: 120vh;
   object-fit: cover; 
 }
 
 .card-container { 
   display: grid; 
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(17.5rem, 1fr)); /* 280px convertido a rem */
+  gap: 1.25rem; /* 20px convertido a rem */
   justify-content: center; 
   align-items: center; 
 }
 
 .card { 
-  width: 300px; 
-  border-radius: 10px; 
-  margin: 10px; 
+  width: 18.75rem; /* 300px convertido a rem */
+  border-radius: 0.625rem; /* 10px convertido a rem */
+  margin: 0.625rem; /* 10px convertido a rem */
   position: relative; 
   text-align: center; 
 }
 
 .card img { 
   width: 100%; 
-  height: 430px; 
+  height: 26.875rem; /* 430px convertido a rem */
   object-fit: cover; 
 }
 
@@ -72,23 +72,23 @@ header img {
   text-align: center; 
   font-size: 1.5em; 
   font-weight: bold; 
-  margin: 30px 0 0 0; 
+  margin: 1.875rem 0 0 0; /* 30px convertido a rem */
 }
 
 .contenedor-boton {
   display: flex;
-  flex-direction: column; /* Agregamos esta línea */
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 25px; /* Aumenta el valor para más separación */
+  margin-bottom: 1.5625rem; /* 25px convertido a rem */
 }
 
 .btn {
-  border: 2px solid #a87932;    /* Borde dorado */
-  background: none;             /* Sin fondo */
+  border: 0.125rem solid #a87932; /* 2px convertido a rem */
+  background: none;
   color:  #a87932;              
-  padding: 10px 24px;
-  border-radius: 5px;
+  padding: 0.625rem 1.5rem; /* 10px y 24px convertidos a rem */
+  border-radius: 0.3125rem; /* 5px convertido a rem */
   font-size: 1em;
   cursor: pointer;
   font-weight: bold;
@@ -135,7 +135,7 @@ h4 {
   bottom: 0; left: 50%; 
   transform: translateX(-50%); 
   width: 0%; 
-  height: 2px; 
+  height: 0.125rem; /* 2px convertido a rem */
   background: #fff; 
   transition: width 0.3s ease; 
 }
@@ -144,41 +144,41 @@ h4 {
   width: 80%; 
 }
 
-@media (max-width: 600px) { 
+@media (max-width: 37.5rem) { /* 600px convertido a rem */
   .nav { grid-template-columns: 1fr; } 
 }
 
 .footer { 
   background-color: black; 
   color: white; 
-  padding: 15px; 
-  font-size: 16px; 
-  height: 180px; 
+  padding: 0.9375rem; /* 15px convertido a rem */
+  font-size: 1em;
+  height: 11.25rem; /* 180px convertido a rem */
 }
 
 .redes-vertical { 
   transform: translateX(20%); 
   display: flex; 
-  flex-direction: column; /* Coloca los íconos en columna */ 
+  flex-direction: column;
   align-items: center; 
-  gap: 10px; 
-  margin: 10px 0; 
+  gap: 0.625rem; /* 10px convertido a rem */
+  margin: 0.625rem 0; /* 10px convertido a rem */
 }
 
 .red-item { 
   display: flex; 
   align-items: center; 
-  gap: 10px; /* Espacio entre ícono y texto */ 
+  gap: 0.625rem; /* 10px convertido a rem */
 }
 
 .icono-red { 
-  width: 35px; 
-  height: 28px; 
+  width: 2.1875rem; /* 35px convertido a rem */
+  height: 1.75rem; /* 28px convertido a rem */
 }
 
 .icono-red-f { 
-  width: 50px; 
-  height: 30px; 
+  width: 3.125rem; /* 50px convertido a rem */
+  height: 1.875rem; /* 30px convertido a rem */
 } 
 
 .derechos { 
@@ -371,6 +371,7 @@ body {
         padding: 20px;
     }
 }
+
 
 
 
