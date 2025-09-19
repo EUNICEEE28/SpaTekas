@@ -104,9 +104,8 @@ h4 {
 }
 
 .nav { 
-  display: flex; /* Usamos flexbox para una mejor adaptabilidad */
-  flex-wrap: wrap; /* Permite que los elementos pasen a la siguiente línea si no caben */
-  justify-content: space-around; /* Distribuye el espacio entre los elementos */
+  display: grid; 
+  grid-template-columns: repeat(6, 1fr); 
   background: #eac1c1; 
   text-align: center; 
   width: 100%; 
@@ -119,8 +118,7 @@ h4 {
   text-decoration: none; 
   color: #fff; 
   position: relative; 
-  transition: background 0.3s ease;
-  flex-grow: 1; /* Permite que los elementos se estiren para llenar el espacio disponible */
+  transition: background 0.3s ease; 
 }
 
 .nav-item:hover { 
@@ -143,9 +141,7 @@ h4 {
 }
 
 @media (max-width: 37.5rem) {
-  .nav-item { 
-    flex-basis: 100%; /* Cada elemento ocupa su propia línea en pantallas pequeñas */
-  }
+  .nav { grid-template-columns: 1fr; } 
 }
 
 .footer { 
@@ -188,6 +184,43 @@ h4 {
   text-align: right; /* Alinea el texto a la derecha */
   align-self: flex-end; /* Lo mueve al final del contenedor flex */
   transform: translateY(-90%); 
+}
+
+.mision-vision {
+  width: 90%;
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #fff0f5; /* Rosa claro pastel */
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  font-family: 'Georgia', serif;
+  color: #4b4b4b; /* Gris oscuro para elegancia */
+  text-align: center;
+}
+
+.mision-vision h1 {
+  font-size: 2.5rem;
+  color: #a87932; /* Dorado */
+  margin-bottom: 0.5rem;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.mision-vision h1::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #eac1c1; /* Rosa un poco más oscuro */
+  margin: 10px auto 0;
+}
+
+.mision-vision p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  text-align: justify; /* Alinea el texto para una mejor lectura */
 }
 /* Paleta de Colores muy sencilla */
 :root {
@@ -375,6 +408,7 @@ body {
         padding: 20px;
     }
 }
+
 
 
 
