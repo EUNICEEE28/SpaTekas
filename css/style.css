@@ -141,7 +141,7 @@ nav ul li ul li a:hover{
 }
 
 @media screen and (max-width: 720px) {
-  .Logo img{
+  .logo img{
     width: 200px;
   }
 
@@ -175,19 +175,12 @@ nav ul li ul li a:hover{
     transform: scale(1); 
   }
 
-  .icon__menu {
-    margin-top: 0;
+  #label__check{
     display: block;
-    align-items: center;
-    justify-content: center;
-    height: 100%; /* igual a .container__menu */
   }
 
-  #label__check {
+  .icon__menu{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
   }
 
   #check__menu:checked ~ nav > ul {
@@ -639,6 +632,7 @@ footer {
   background: #f1e7e1;
   margin-top: 2rem;
 }
+
 
 
 
