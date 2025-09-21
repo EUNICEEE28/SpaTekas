@@ -141,7 +141,7 @@ nav ul li ul li a:hover{
 }
 
 @media screen and (max-width: 720px) {
-  .logo img{
+  .Logo img{
     width: 200px;
   }
 
@@ -639,6 +639,7 @@ footer {
   background: #f1e7e1;
   margin-top: 2rem;
 }
+
 
 
 
