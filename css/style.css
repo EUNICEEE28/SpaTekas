@@ -176,7 +176,7 @@ nav ul li ul li a:hover{
   }
 
   #label__check{
-    display: flex;
+    display: block;
   }
 
   .icon__menu{
