@@ -180,6 +180,7 @@ nav ul li ul li a:hover{
 
   .icon__menu{
     display: flex;
+    padding:5px;
   }
 
   #check__menu:checked ~ nav > ul {
@@ -632,6 +633,7 @@ footer {
   background: #f1e7e1;
   margin-top: 2rem;
 }
+
 
 
 
