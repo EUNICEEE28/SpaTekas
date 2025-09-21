@@ -177,7 +177,7 @@ nav ul li ul li a:hover{
 
   .icon__menu {
     margin-top: 0;
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
     height: 70px; /* igual a .container__menu */
@@ -639,6 +639,7 @@ footer {
   background: #f1e7e1;
   margin-top: 2rem;
 }
+
 
 
 
