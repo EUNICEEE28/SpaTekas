@@ -176,7 +176,7 @@ nav ul li ul li a:hover{
   }
 
   #label__check{
-    display: block;
+    display: flex;
   }
 
   .icon__menu{
@@ -632,6 +632,7 @@ footer {
   background: #f1e7e1;
   margin-top: 2rem;
 }
+
 
 
 
