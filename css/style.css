@@ -56,6 +56,8 @@ header img {
   margin: 0.625rem;
   position: relative; 
   text-align: center; 
+  align-items: center;
+  justify-content: center;
 }
 
 .card img { 
@@ -483,6 +485,7 @@ footer {
   background: #f1e7e1;
   margin-top: 2rem;
 }
+
 
 
 
