@@ -207,7 +207,7 @@ header {
   position: relative; 
 } 
 
-header img { 
+.Logo { 
   position: absolute; 
   height: 10rem;
   left: 5%; 
@@ -639,6 +639,7 @@ footer {
   background: #f1e7e1;
   margin-top: 2rem;
 }
+
 
 
 
