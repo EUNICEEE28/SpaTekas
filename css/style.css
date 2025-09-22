@@ -11,7 +11,7 @@
   height: 70px;
   background: #eac1c1;
   padding: 0 20px;
-  position: absolute;
+  position: relative;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   margin-top: -20px;
 }
@@ -733,6 +733,7 @@ footer {
   background: #f1e7e1;
   margin-top: 2rem;
 }
+
 
 
 
