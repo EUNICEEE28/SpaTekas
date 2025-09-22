@@ -102,7 +102,7 @@ nav ul li ul li a:hover {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
 }
 
-nav ul li ul:before {
+nav ul li ul::before {
   content: '';
   width: 0;
   height: 0;
@@ -672,6 +672,7 @@ footer {
   background: #f1e7e1;
   margin-top: 2rem;
 }
+
 
 
 
