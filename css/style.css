@@ -277,6 +277,13 @@ nav ul li ul:before {
     color: white;
     padding-left: 30px;
   }
+
+  .card-container {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    justify-items: center;
+  }
+
 }
 
 
@@ -324,12 +331,14 @@ header {
   object-fit: cover; 
 }
 
-.card-container { 
-  display: grid; 
-  grid-template-columns: repeat(auto-fit, minmax(17.5rem, 1fr));
-  gap: 1.25rem; 
-  place-items: center;
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+  padding: 2rem 1rem;
 }
+
 
   .card {
   width: 100%;
