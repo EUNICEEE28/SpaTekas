@@ -759,7 +759,7 @@ body {
   .descripcion {
       padding: 15px;
   }
-  #tit {
+  h2 {
       text-align: center;
       margin-bottom: 20px;
   }
@@ -779,6 +779,7 @@ body {
   #estetica > img{
       height: 44%;
   }
+
 
 
 
