@@ -301,7 +301,7 @@ header {
 
 .logo-container {
   position: absolute;
-  top: 0.2rem;
+  top: 0.1rem;
   left: 5%;
 }
 
@@ -734,6 +734,7 @@ footer {
   background: #f1e7e1;
   margin-top: 2rem;
 }
+
 
 
 
