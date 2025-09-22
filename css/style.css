@@ -140,7 +140,7 @@ nav ul li ul li a:hover{
 }
 
 @media screen and (max-width: 768px) {
-  /* Mostrar ícono de menú hamburguesa */
+  /* Mostrar ícono hamburguesa */
   #label__check {
     display: flex;
     align-items: center;
@@ -153,31 +153,12 @@ nav ul li ul li a:hover{
     align-items: center;
     justify-content: center;
     height: 70px;
-    color: white;
     font-size: 26px;
+    color: white;
     cursor: pointer;
   }
 
-  /* Ajustar logo */
-  .logo {
-    width: 120px;
-    height: auto;
-    margin-bottom: 10px;
-  }
-
-  /* Ajustar encabezado */
-  .titulo {
-    font-size: 1.5em;
-    text-align: center;
-  }
-
-  .lema {
-    font-size: 1em;
-    text-align: center;
-    padding: 0 10px;
-  }
-
-  /* Ocultar menú por defecto en móvil */
+  /* Ocultar menú por defecto */
   nav > ul {
     flex-direction: column;
     background: #eac1c1;
@@ -193,7 +174,7 @@ nav ul li ul li a:hover{
     z-index: 100;
   }
 
-  /* Mostrar menú cuando se activa el checkbox */
+  /* Mostrar menú al activar el checkbox */
   #check__menu:checked ~ nav > ul {
     height: auto;
     opacity: 1;
@@ -203,26 +184,25 @@ nav ul li ul li a:hover{
     overflow-y: auto;
   }
 
-  /* Estilo de los ítems del menú en móvil */
+  /* Estilo de los ítems del menú */
   nav > ul > li {
     width: 100%;
     text-align: center;
   }
 
   nav > ul > li > a {
-    padding: 14px;
     display: block;
+    padding: 14px;
     color: white;
     background: #eac1c1;
-    font-size: 16px;
     text-transform: uppercase;
+    font-size: 16px;
     transition: all 300ms ease;
   }
 
   nav > ul > li > a:hover {
     background: #dd9e9e;
-    color: white;
-    transform: scale(1.05);
+    transform: scale(1.1);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
   }
 
@@ -230,28 +210,30 @@ nav ul li ul li a:hover{
   nav > ul > li > ul {
     position: static;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #eac1c1;
+    padding: 14px 0;
     box-shadow: none;
-    padding: 0;
     margin-top: 10px;
     visibility: visible;
     opacity: 1;
-    display: flex;
-    flex-direction: column;
   }
 
   nav ul li ul li a {
-    padding: 10px;
-    font-size: 14px;
+    display: block;
     color: #a87932;
-    background: #fbe4e4;
+    padding: 10px 14px;
+    font-size: 14px;
     text-transform: uppercase;
     transition: all 300ms ease;
+    background: #fbe4e4;
   }
 
   nav ul li ul li a:hover {
     background: #dd9e9e;
+    transform: scale(1.1);
     color: white;
-    transform: scale(1.05);
     padding-left: 30px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
   }
@@ -701,6 +683,7 @@ footer {
   background: #f1e7e1;
   margin-top: 2rem;
 }
+
 
 
 
