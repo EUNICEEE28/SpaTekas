@@ -140,14 +140,19 @@ nav ul li ul li a:hover{
 }
 
 @media screen and (max-width: 768px) {
-  /* Ajustar logo */
+  /* Logo centrado y delicado */
   .logo {
-    width: 200px;
+    width: 180px;
     display: block;
-    margin: 0 auto;
+    margin: 10px auto;
+    transition: transform 0.3s ease;
   }
 
-  /* Mostrar ícono hamburguesa */
+  .logo:hover {
+    transform: scale(1.05);
+  }
+
+  /* Ícono de menú tipo hamburguesa */
   #label__check {
     display: flex;
     align-items: center;
@@ -155,18 +160,23 @@ nav ul li ul li a:hover{
     height: 70px;
     width: 40px;
     cursor: pointer;
+    z-index: 200;
   }
 
   .icon__menu {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 26px;
+    font-size: 28px;
     color: white;
-    height: 100%;
+    transition: transform 0.3s ease;
   }
 
-  /* Ocultar menú por defecto */
+  .icon__menu:hover {
+    transform: scale(1.2);
+  }
+
+  /* Menú oculto por defecto */
   nav > ul {
     flex-direction: column;
     background: #eac1c1;
@@ -179,10 +189,12 @@ nav ul li ul li a:hover{
     opacity: 0;
     visibility: hidden;
     transition: all 300ms ease;
-    z-index: 100;
+    z-index: 150;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   }
 
-  /* Mostrar menú al activar el checkbox */
+  /* Menú desplegado al activar el checkbox */
   #check__menu:checked ~ nav > ul {
     height: auto;
     opacity: 1;
@@ -192,10 +204,11 @@ nav ul li ul li a:hover{
     overflow-y: auto;
   }
 
-  /* Estilo de los ítems del menú */
+  /* Ítems del menú principal */
   nav > ul > li {
     width: 100%;
     text-align: center;
+    margin-bottom: 5px;
   }
 
   nav > ul > li > a {
@@ -205,7 +218,9 @@ nav ul li ul li a:hover{
     background: #eac1c1;
     text-transform: uppercase;
     font-size: 16px;
+    font-weight: bold;
     transition: all 300ms ease;
+    border-bottom: 1px solid #dd9e9e;
   }
 
   nav > ul > li > a:hover,
@@ -215,27 +230,28 @@ nav ul li ul li a:hover{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
   }
 
-  /* Submenús en móvil */
+  /* Submenús adaptados para móvil */
   nav > ul > li > ul {
     position: static;
     display: flex;
     flex-direction: column;
     width: 100%;
-    background: #eac1c1;
+    background: #fbe4e4;
     padding: 10px 0;
     box-shadow: none;
     margin-top: 0;
     visibility: visible;
     opacity: 1;
+    border-radius: 0 0 10px 10px;
   }
 
   nav ul li ul li a {
     display: block;
     color: #a87932;
-    padding: 10px 14px;
+    padding: 10px 20px;
     font-size: 14px;
     text-transform: uppercase;
-    background: #fbe4e4;
+    background: #fff0f5;
     transition: all 300ms ease;
   }
 
@@ -247,12 +263,11 @@ nav ul li ul li a:hover{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
   }
 
-  /* Flecha decorativa del submenú (opcional en móvil) */
+  /* Flecha decorativa oculta en móvil */
   nav ul li ul:before {
     display: none;
   }
 }
-
 
 
 /*HEADER*/
@@ -698,6 +713,7 @@ footer {
   background: #f1e7e1;
   margin-top: 2rem;
 }
+
 
 
 
