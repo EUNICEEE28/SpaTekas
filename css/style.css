@@ -151,6 +151,7 @@ nav ul li ul:before {
   display: flex;
   justify-content: center;
   margin-bottom: 1rem;
+  left: 5%;
 }
 
 .logo {
@@ -733,6 +734,7 @@ footer {
   background: #f1e7e1;
   margin-top: 2rem;
 }
+
 
 
 
