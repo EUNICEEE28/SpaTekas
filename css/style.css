@@ -47,7 +47,7 @@ nav ul li {
 nav > ul > li > a {
   display: flex;
   align-items: center;
-  padding: 14px 20px;
+  padding: 30px 20px;
   color: white;
   font-size: 15px;
   text-transform: uppercase;
@@ -62,8 +62,6 @@ nav > ul > li > a:hover,
   transform: scale(1.05);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
-
-
 
 /* Submenú escritorio */
 nav > ul > li > ul {
@@ -187,7 +185,7 @@ nav ul li ul:before {
     height: 70px;
     width: 70px;
     cursor: pointer;
-    z-index: 200;
+    z-index: 50;
     background: #eac1c1;
     position: absolute;
     top: 0;
@@ -300,7 +298,7 @@ header {
 
 .logo-container {
   position: absolute;
-  top: -2rem;
+  top: -1.5rem;
   left: 5%;
 }
 
@@ -321,6 +319,7 @@ header {
   font-size: 1.2em; 
   font-style: italic; 
   padding: 0.3125rem 0 1.25rem 0;
+  margin-bottom: 7px;
 }
 
 .imagen img { 
@@ -733,6 +732,7 @@ footer {
   background: #f1e7e1;
   margin-top: 2rem;
 }
+
 
 
 
