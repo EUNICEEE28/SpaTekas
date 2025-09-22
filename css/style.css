@@ -327,9 +327,7 @@ header {
 .card-container { 
   display: grid; 
   grid-template-columns: repeat(auto-fit, minmax(17.5rem, 1fr));
-  gap: 1.25rem;
-  justify-content: center; 
-  align-items: center; 
+  gap: 1.25rem; 
   place-items: center;
 }
 
@@ -726,6 +724,7 @@ footer {
   background: #f1e7e1;
   margin-top: 2rem;
 }
+
 
 
 
