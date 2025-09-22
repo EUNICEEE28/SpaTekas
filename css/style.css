@@ -132,8 +132,7 @@ nav ul li ul:before {
 @media screen and (max-width: 768px) {
 
   /* Ajustes para header en móvil */
-  /* Ajustes para header en móvil */
-header {
+  header {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -141,6 +140,8 @@ header {
   padding-top: 1rem;
   padding-bottom: 1rem;
   position: relative;
+  background: black;
+  color: white;
   text-align: center;
 }
 
@@ -734,6 +735,7 @@ footer {
   background: #f1e7e1;
   margin-top: 2rem;
 }
+
 
 
 
