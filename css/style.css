@@ -58,8 +58,6 @@ nav > ul > li > a {
 
 nav > ul > li > a:hover,
 #selected {
-  background: #dd9e9e;
-  transform: scale(1.05);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -732,6 +730,7 @@ footer {
   background: #f1e7e1;
   margin-top: 2rem;
 }
+
 
 
 
