@@ -5,23 +5,28 @@
   text-decoration: none;
 }
 
-/*Barra de navegacion*/
-
+/* === MENÚ EN ESCRITORIO === */
 .container__menu {
   width: 100%;
   height: 70px;
   background: #eac1c1;
-  padding: 0px 20px;
+  padding: 0 20px;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.menu{
+.menu {
   max-width: 1200px;
   margin: auto;
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 nav {
   height: 100%;
+  width: 100%;
 }
 
 nav > ul {
@@ -29,54 +34,70 @@ nav > ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
 }
 
 nav ul li {
-  height: 100%;
   list-style: none;
   position: relative;
+  height: 100%;
 }
 
 nav > ul > li > a {
-  height: 100%;
   display: flex;
-  width: 100%;
   align-items: center;
-  padding: 14px;
+  padding: 14px 20px;
   color: white;
+  font-size: 15px;
   text-transform: uppercase;
-  font-size: 14px;
+  font-weight: bold;
   transition: all 300ms ease;
+  border-radius: 8px;
 }
 
-nav > ul > li > a:hover {
-  transform: scale(1.1);
+nav > ul > li > a:hover,
+#selected {
   background: #dd9e9e;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-#selected{
-  transform: scale(1.1);
-  background: #dd9e9e;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
-}
-
-/* Submenu */
-
+/* Submenú escritorio */
 nav > ul > li > ul {
-  width: 200px;
-  background: #eac1c1;
-  display: flex;
-  flex-direction: column;
   position: absolute;
-  top: 90px;
-  left: -5px;
-  padding: 14px 0px;
-  visibility: hidden;
+  top: 70px;
+  left: 0;
+  width: 220px;
+  background: #fbe4e4;
+  padding: 10px 0;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   opacity: 0;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
-  z-index: 10;
+  visibility: hidden;
   transition: all 300ms ease;
+  z-index: 10;
+}
+
+nav > ul > li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+}
+
+nav ul li ul li a {
+  display: block;
+  padding: 10px 20px;
+  color: #a87932;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: all 300ms ease;
+  background: #fff0f5;
+}
+
+nav ul li ul li a:hover {
+  background: #dd9e9e;
+  color: white;
+  padding-left: 30px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
 }
 
 nav ul li ul:before {
@@ -91,75 +112,43 @@ nav ul li ul:before {
   left: 20px;
 }
 
-nav > ul > li:hover > ul{
-  visibility: visible;
-  opacity: 1;
-  top: 70px;
-}
-
-nav ul li ul li a{
-  display: block;
-  color: #a87932;
-  padding: 6px;
-  padding-left: 14px;
-  margin-top: 10px;
-  font-size: 14px;
-  text-transform: uppercase;
-  transition: all 300ms ease;
-}
-
-nav ul li ul li a:hover{
-  background: #dd9e9e;
-  transform: scale(1.1);
-  color: white;
-  padding-left: 30px;
-  font-size: 14px;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
-}
-
-/* Responsivos */
-
-.icon__menu{
-  font-size: 26px;
-  color: white;
-  cursor: pointer;
-  width: 26px;
-  height: 100%;
-  align-items: center;
+/* === ÍCONO HAMBURGUESA EN ESCRITORIO (oculto) === */
+.icon__menu {
   display: none;
 }
 
-#check__menu{
+#check__menu {
   display: none;
 }
 
-#label__check{
-  width: 26px;
-  height: 100%;
+#label__check {
   display: none;
 }
 
+/* === RESPONSIVE MÓVIL === */
 @media screen and (max-width: 768px) {
-  /* Mostrar ícono hamburguesa */
-    #label__check {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 70px;
-      width: 40px;
-      cursor: pointer;
-      z-index: 200;
-      background: #eac1c1; /* opcional: para que se vea como parte del menú */
+  #label__check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 70px;
+    cursor: pointer;
+    z-index: 200;
+    background: #eac1c1;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
-  
+
   .icon__menu {
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 28px;
     color: white;
-    height: 100%;
     width: 100%;
+    height: 100%;
     transition: transform 0.3s ease;
   }
 
@@ -167,7 +156,6 @@ nav ul li ul li a:hover{
     transform: scale(1.1);
   }
 
-  /* Ocultar menú por defecto */
   nav > ul {
     flex-direction: column;
     background: #eac1c1;
@@ -185,7 +173,6 @@ nav ul li ul li a:hover{
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   }
 
-  /* Mostrar menú al activar el checkbox */
   #check__menu:checked ~ nav > ul {
     height: auto;
     opacity: 1;
@@ -195,7 +182,6 @@ nav ul li ul li a:hover{
     overflow-y: auto;
   }
 
-  /* Ítems del menú principal */
   nav > ul > li {
     width: 100%;
     text-align: center;
@@ -207,20 +193,12 @@ nav ul li ul li a:hover{
     padding: 14px;
     color: white;
     background: #eac1c1;
-    text-transform: uppercase;
     font-size: 17px;
     font-weight: bold;
+    text-transform: uppercase;
     border-bottom: 1px solid #dd9e9e;
-    transition: background 300ms ease;
   }
 
-  nav > ul > li > a:hover,
-  #selected {
-    background: #dd9e9e;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
-  }
-
-  /* Submenú oculto por defecto en móvil */
   nav > ul > li > ul {
     display: none;
     flex-direction: column;
@@ -229,36 +207,28 @@ nav ul li ul li a:hover{
     border-radius: 0 0 10px 10px;
   }
 
-  /* Mostrar submenú al tocar el ítem padre */
   nav > ul > li:active > ul,
   nav > ul > li:focus-within > ul {
     display: flex;
   }
 
-  /* Estilo visual del submenú */
   nav ul li ul li a {
-    display: block;
-    color: #a87932;
     padding: 10px 20px;
     font-size: 15px;
-    text-transform: uppercase;
+    color: #a87932;
     background: #fff0f5;
-    transition: background 300ms ease;
   }
 
   nav ul li ul li a:hover {
     background: #dd9e9e;
     color: white;
     padding-left: 30px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
   }
 
-  /* Ocultar flechita decorativa en móvil */
   nav ul li ul:before {
     display: none;
   }
 }
-
 
 
 /*HEADER*/
@@ -704,6 +674,7 @@ footer {
   background: #f1e7e1;
   margin-top: 2rem;
 }
+
 
 
 
