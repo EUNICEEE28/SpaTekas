@@ -141,7 +141,7 @@ nav ul li ul li a:hover{
 
 @media screen and (max-width: 768px) {
   /* Mostrar ícono hamburguesa */
-  #label__check {
+    #label__check {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -149,14 +149,17 @@ nav ul li ul li a:hover{
     width: 40px;
     cursor: pointer;
     z-index: 200;
+    background: #eac1c1; /* opcional: para que se vea como parte del menú */
   }
-
+  
   .icon__menu {
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 28px;
     color: white;
+    height: 100%;
+    width: 100%;
     transition: transform 0.3s ease;
   }
 
@@ -701,6 +704,7 @@ footer {
   background: #f1e7e1;
   margin-top: 2rem;
 }
+
 
 
 
