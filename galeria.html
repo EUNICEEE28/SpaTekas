@@ -86,9 +86,26 @@
        #estetica > img{
            height: 44%;
        }
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 3em;
+            color: var(--color-dark-text);
+            margin-bottom: 50px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color: var(--color-pink-pastel);
+            margin: 10px auto 0;
+        }
     </style>
     <main>
-        <h2>Galería de Instalaciones - Salón de Spa</h2>
+        <h2 class="section-title">Galería de Instalaciones - Salón de Spa</h2>
         <div class="galeria">
             <div class="item">
                 <img src="imagenes/recepcion.jpg" alt="Recepción del Spa">
