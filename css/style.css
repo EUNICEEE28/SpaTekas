@@ -140,7 +140,7 @@ nav ul li ul li a:hover{
 }
 
 @media screen and (max-width: 768px) {
-  /* Ícono hamburguesa visible */
+  /* Mostrar ícono hamburguesa */
   #label__check {
     display: flex;
     align-items: center;
@@ -164,7 +164,7 @@ nav ul li ul li a:hover{
     transform: scale(1.1);
   }
 
-  /* Menú oculto por defecto */
+  /* Ocultar menú por defecto */
   nav > ul {
     flex-direction: column;
     background: #eac1c1;
@@ -182,7 +182,7 @@ nav ul li ul li a:hover{
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   }
 
-  /* Menú desplegado */
+  /* Mostrar menú al activar el checkbox */
   #check__menu:checked ~ nav > ul {
     height: auto;
     opacity: 1;
@@ -207,30 +207,32 @@ nav ul li ul li a:hover{
     text-transform: uppercase;
     font-size: 17px;
     font-weight: bold;
-    transition: background 300ms ease;
     border-bottom: 1px solid #dd9e9e;
+    transition: background 300ms ease;
   }
 
-  nav > ul > li > a:hover {
+  nav > ul > li > a:hover,
+  #selected {
     background: #dd9e9e;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
   }
 
-  /* Submenús en móvil */
+  /* Submenú oculto por defecto en móvil */
   nav > ul > li > ul {
-    position: static;
-    display: flex;
+    display: none;
     flex-direction: column;
-    width: 100%;
     background: #fbe4e4;
     padding: 10px 0;
-    box-shadow: none;
-    margin-top: 0;
-    visibility: visible;
-    opacity: 1;
     border-radius: 0 0 10px 10px;
   }
 
+  /* Mostrar submenú al tocar el ítem padre */
+  nav > ul > li:active > ul,
+  nav > ul > li:focus-within > ul {
+    display: flex;
+  }
+
+  /* Estilo visual del submenú */
   nav ul li ul li a {
     display: block;
     color: #a87932;
@@ -248,11 +250,12 @@ nav ul li ul li a:hover{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
   }
 
-  /* Flecha decorativa oculta en móvil */
+  /* Ocultar flechita decorativa en móvil */
   nav ul li ul:before {
     display: none;
   }
 }
+
 
 
 /*HEADER*/
@@ -698,6 +701,7 @@ footer {
   background: #f1e7e1;
   margin-top: 2rem;
 }
+
 
 
 
