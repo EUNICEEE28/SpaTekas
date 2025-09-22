@@ -187,7 +187,7 @@ nav ul li ul:before {
     height: 70px;
     width: 70px;
     cursor: pointer;
-    z-index: 300;
+    z-index: 50;
     background: #eac1c1;
     position: absolute;
     top: 0;
@@ -733,6 +733,7 @@ footer {
   background: #f1e7e1;
   margin-top: 2rem;
 }
+
 
 
 
