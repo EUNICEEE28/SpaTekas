@@ -173,12 +173,17 @@ nav ul li ul li a:hover{
     transform: scale(1); 
   }
 
-  #label__check{
+  .icon__menu {
+    margin-top: 0;
     display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
-  .icon__menu{
+  #label__check {
     display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   #check__menu:checked ~ nav > ul {
@@ -630,6 +635,7 @@ footer {
   background: #f1e7e1;
   margin-top: 2rem;
 }
+
 
 
 
