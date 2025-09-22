@@ -56,9 +56,10 @@ nav > ul > li > a {
   border-radius: 8px;
 }
 
-nav > ul > li > a:hover,
-#selected {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+nav > ul > li > a:hover{
+  transform: scale(1.1);
+    background: #dd9e9e;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
 }
 
 /* Submenú escritorio */
@@ -730,6 +731,7 @@ footer {
   background: #f1e7e1;
   margin-top: 2rem;
 }
+
 
 
 
