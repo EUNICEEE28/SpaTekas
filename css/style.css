@@ -325,16 +325,15 @@ header img {
   gap: 1.25rem;
   justify-content: center; 
   align-items: center; 
+  place-items: center;
 }
 
-.card { 
-  width: 18.75rem;
+  .card {
+  width: 100%;
+  max-width: 18.75rem;
   border-radius: 0.625rem;
-  margin: 0.625rem;
-  position: relative; 
-  text-align: center; 
-  align-items: center;
-  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .card img { 
@@ -722,6 +721,7 @@ footer {
   background: #f1e7e1;
   margin-top: 2rem;
 }
+
 
 
 
