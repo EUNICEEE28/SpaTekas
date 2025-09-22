@@ -132,16 +132,45 @@ nav ul li ul:before {
 @media screen and (max-width: 768px) {
 
   /* Ajustes para header en móvil */
-  header {
-    flex-direction: column;
-    align-items: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    position: relative;
-  }
+  /* Ajustes para header en móvil */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  position: relative;
+  text-align: center;
+}
+
+/* Logo en móvil */
+.logo {
+  position: static;
+  max-width: 80%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+/* Título en móvil */
+.titulo {
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  padding: 0 1rem;
+}
+
+/* Lema en móvil */
+.lema {
+  font-size: 1em;
+  font-style: italic;
+  color: #a87932;
+  padding: 0 1rem 1rem 1rem;
+}
+
   
   /* Logo en móvil */
-  .Logo {
+  .logo {
     position: static;
     height: 8rem;
     margin-bottom: 1rem;
@@ -705,6 +734,7 @@ footer {
   background: #f1e7e1;
   margin-top: 2rem;
 }
+
 
 
 
