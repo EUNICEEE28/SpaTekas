@@ -127,7 +127,7 @@ nav ul li ul li a:hover{
   height: 100%;
   align-items: center;
   display: none;
-  margin-top: -10px;
+  margin-top: -20px;
 }
 
 #check__menu{
@@ -142,7 +142,7 @@ nav ul li ul li a:hover{
 
 @media screen and (max-width: 720px) {
   .logo img{
-    width: 200px;
+    width: 100px;
   }
 
   nav > ul{
@@ -632,6 +632,7 @@ footer {
   background: #f1e7e1;
   margin-top: 2rem;
 }
+
 
 
 
