@@ -126,8 +126,6 @@ nav ul li ul li a:hover{
   width: 26px;
   height: 100%;
   align-items: center;
-  display: none;
-  margin-top: 20px;
 }
 
 #check__menu{
@@ -632,6 +630,7 @@ footer {
   background: #f1e7e1;
   margin-top: 2rem;
 }
+
 
 
 
