@@ -150,13 +150,13 @@ nav ul li ul:before {
   position: static;
   display: flex;
   justify-content: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .logo {
   max-width: 80%;
   height: auto;
-  margin: 0 auto;
+  margin-top: -0.5rem;
 }
 
 .texto-header {
@@ -300,7 +300,7 @@ header {
 
 .logo-container {
   position: absolute;
-  top: 1rem;
+  top: 0.3rem;
   left: 5%;
 }
 
@@ -733,6 +733,7 @@ footer {
   background: #f1e7e1;
   margin-top: 2rem;
 }
+
 
 
 
