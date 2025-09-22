@@ -154,7 +154,7 @@ nav ul li ul:before {
 }
 
 .logo {
-  max-width: 90%;
+  max-width: 80%;
   height: auto;
   margin: 0 auto;
 }
@@ -733,6 +733,7 @@ footer {
   background: #f1e7e1;
   margin-top: 2rem;
 }
+
 
 
 
