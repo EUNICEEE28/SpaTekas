@@ -62,6 +62,8 @@ nav > ul > li > a:hover,
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
+
+
 /* Submenú escritorio */
 nav > ul > li > ul {
   position: absolute;
@@ -223,10 +225,6 @@ nav ul li ul:before {
     background: #dd9e9e;
     color: white;
     padding-left: 30px;
-  }
-
-  nav ul li ul:before {
-    display: none;
   }
 }
 
@@ -674,6 +672,7 @@ footer {
   background: #f1e7e1;
   margin-top: 2rem;
 }
+
 
 
 
