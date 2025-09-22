@@ -137,7 +137,7 @@ nav ul li ul:before {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 1rem;
+  padding-top: 2rem;
   padding-bottom: 1rem;
   position: relative;
   background: black;
@@ -156,6 +156,7 @@ nav ul li ul:before {
 .logo {
   max-width: 80%;
   height: auto;
+  margin: o auto;
 }
 
 .texto-header {
@@ -290,11 +291,15 @@ header {
   position: relative; 
 } 
 
-header img { 
-  position: absolute; 
+.logo-container {
+  position: absolute;
+  top: 1rem;
+  left: 5%;
+}
+
+.logo {
   height: 10rem;
-  left: 5%; 
-  padding: 0 0 0.5625rem 0.5625rem;
+  width: auto;
 }
 
 .titulo { 
@@ -721,6 +726,7 @@ footer {
   background: #f1e7e1;
   margin-top: 2rem;
 }
+
 
 
 
