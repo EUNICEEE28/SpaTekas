@@ -654,6 +654,7 @@ h2, h3, h4 {
 }
 
 .masaje-card masajes {
+    transform: none;
     font-size: 24px;
     margin: 0 0 10px 0;
     color: #4a494d;
@@ -845,6 +846,7 @@ footer {
   background: #f1e7e1;
   margin-top: 2rem;
 }
+
 
 
 
