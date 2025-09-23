@@ -604,6 +604,128 @@ body {
     background-color: #e0a7c4; /* Un tono más oscuro de rosa para el efecto hover */
 }
 
+/* --- ESTILO DE LA PÁGINA DE MASAJES --- */
+h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Hero Section */
+.hero-masajes {
+    background-image: url('masaje-hero.jpg'); /* Asegúrate de tener una imagen llamada masaje-hero.jpg */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+.hero-masajes::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content h2 {
+    font-size: 48px;
+    margin: 0;
+    color: #fff;
+}
+
+.hero-content p {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+
+/* Masajes Section */
+.section-masajes {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.masaje-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.masaje-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.masaje-card h4 {
+    font-size: 24px;
+    margin: 0 0 10px 0;
+    color: #4a494d;
+}
+
+.masaje-card p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #c7a477;
+    margin-top: 15px;
+}
+
+/* Call to Action Section */
+.call-to-action {
+    background-color: #5d5c61;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.call-to-action h3 {
+    font-size: 32px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.call-to-action p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #c7a477;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #b38b62;
+}
+
 /* --- ADAPTACIÓN PARA TABLETAS Y DISPOSITIVOS MÁS GRANDES --- */
 /* (Cuando la pantalla es más ancha que 768px y hasta 1024px) */
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -731,6 +853,7 @@ footer {
   background: #f1e7e1;
   margin-top: 2rem;
 }
+
 
 
 
