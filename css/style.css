@@ -704,6 +704,20 @@ h2, h3, h4 {
     background-color: #b38b62;
 }
 
+
+/* Media Queries para diseño responsive */
+@media (min-width: 768px) {
+    .section-masajes {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    .masaje-card {
+        margin-bottom: 0;
+    }
+}
+
 /* --- ADAPTACIÓN PARA TABLETAS Y DISPOSITIVOS MÁS GRANDES --- */
 /* (Cuando la pantalla es más ancha que 768px y hasta 1024px) */
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -831,6 +845,7 @@ footer {
   background: #f1e7e1;
   margin-top: 2rem;
 }
+
 
 
 
