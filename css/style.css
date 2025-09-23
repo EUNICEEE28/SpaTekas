@@ -488,28 +488,6 @@ body {
     line-height: 1.6;
 }
 
-/* --- ESTILO DEL ENCABEZADO --- */
-.main-header {
-    width: 100%;
-    background-color: lightpink; /* Color de fondo del encabezado */
-    color: black;
-    padding: 50px 20px;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.main-header h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 4em;
-    margin: 0;
-}
-
-.main-header p {
-    font-size: 1.2em;
-    font-weight: 300;
-    margin-top: 10px;
-}
-
 /* --- ESTILO DE LA SECCIÓN DE SERVICIOS --- */
 #servicios {
     padding: 60px 20px;
@@ -853,6 +831,7 @@ footer {
   background: #f1e7e1;
   margin-top: 2rem;
 }
+
 
 
 
