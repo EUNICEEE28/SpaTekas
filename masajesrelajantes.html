@@ -9,17 +9,41 @@
 <body>
 
     <header>
-        <h2 class="titulo">SPA TKAS</h2>
-        <p class="lema">"Relajación y bienestar en cada detalle"</p>
-        <img src="imagenes/LOGO.svg" alt=""></div>
-        <nav class="nav">
-            <a href="#" class="index.html">Inicio</a>
-            <a href="servicios.html" class="nav-item">Servicios</a>
-            <a href="#" class="nav-item">Galeria</a>
-            <a href="#" class="nav-item">Reseñas</a>
-            <a href="#" class="nav-item">Reservas</a>
-            <a href="#" class="nav-item">Contacto</a>
-        </nav>
+        <div class="logo-container">
+            <img src="imagenes/LOGO.svg" alt="Logo SPA TKAS" class="logo">
+        </div>
+        <div class="texto-header">
+            <h2 class="titulo">SPA TKAS</h2>
+            <p class="lema">"Relajación y bienestar en cada detalle"</p>
+         </div>
+        
+       <div class="container__menu">
+
+            <div class="menu">
+                <input type="checkbox" id="check__menu">
+                <label id="label__check" for="check__menu">
+                    <i class="fa-solid fa-bars icon__menu"></i>
+                </label>
+                <nav>
+                    <ul>
+                        <li><a href="#" id="selected">Inicio</a></li>
+                        <li><a href="servicios.html">Servicios</a>
+                            <ul>
+                                <li><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="galeria.html">Galería</a></li>
+                        <li><a href="#">Reseñas</a></li>
+                        <li><a href="reservas.html">Reservas</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+       </div>
     </header>
 
     <main>
