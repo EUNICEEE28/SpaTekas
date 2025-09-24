@@ -1,6 +1,3 @@
-/* ========================================= */
-/* === REGLAS GENERALES Y RESET === */
-/* ========================================= */
 * { 
   margin: 0;
   padding: 0; 
@@ -8,76 +5,7 @@
   text-decoration: none;
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: var(--color-body-background);
-    color: black;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-}
-
-/* ========================================= */
-/* === PALETA DE COLORES (VARIABLES) === */
-/* ========================================= */
-:root {
-    --color-pink-pastel: #f8c8dc;
-    --color-blue-pastel: #b0e0e6;
-    --color-dark-text: #2c2c2c;
-    --color-body-background: #fdf5e6; /* Un color crema muy suave para el fondo */
-    --color-card-background: #ffffff;
-}
-
-/* ========================================= */
-/* === ESTILOS DEL ENCABEZADO (HEADER) === */
-/* ========================================= */
-header { 
-  background: black; 
-  color: white; 
-  display: flex; 
-  flex-direction: column; 
-  align-items: center; 
-  position: relative; 
-} 
-
-.logo-container {
-  position: absolute;
-  top: -1.5rem;
-  left: 5%;
-}
-
-.logo {
-  height: 10rem;
-  width: auto;
-}
-
-.titulo { 
-  text-align: center; 
-  font-size: 2em; 
-  font-weight: bold; 
-  padding: 1.25rem 0 0.3125rem 0;
-}
-
-.lema { 
-  text-align: center;
-  font-size: 1.2em; 
-  font-style: italic; 
-  padding: 0.3125rem 0 1.25rem 0;
-  margin-bottom: 7px;
-}
-
-.imagen img { 
-  margin: 0.0625rem;
-  width: 100%;
-  height: auto;
-  max-height: 120vh;
-  object-fit: cover; 
-}
-
-/* ========================================= */
-/* === MENÚ DE NAVEGACIÓN === */
-/* ========================================= */
-/* Menú en escritorio */
+/* === MENÚ EN ESCRITORIO === */
 .container__menu {
   width: 100%;
   height: 70px;
@@ -134,7 +62,7 @@ nav > ul > li > a:hover{
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
 }
 
-/* Submenú en escritorio */
+/* Submenú escritorio */
 nav > ul > li > ul {
   position: absolute;
   top: 70px;
@@ -184,7 +112,7 @@ nav ul li ul:before {
   left: 20px;
 }
 
-/* Ícono de menú hamburguesa (oculto en escritorio) */
+/* === ÍCONO HAMBURGUESA EN ESCRITORIO (oculto) === */
 .icon__menu {
   display: none;
 }
@@ -197,453 +125,7 @@ nav ul li ul:before {
   display: none;
 }
 
-/* ========================================= */
-/* === SECCIONES DE CONTENIDO GENERAL === */
-/* ========================================= */
-h2, h3, h4 {
-    font-family: 'Playfair Display', serif;
-}
-
-h4 { 
-  transform: translateY(164%); 
-  color: white; 
-}
-
-.mision-vision {
-  width: 90%;
-  max-width: 1200px;
-  margin: 3rem auto;
-  padding: 2rem;
-  background-color: #fff0f5; /* Rosa claro pastel */
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  font-family: 'Georgia', serif;
-  color: #4b4b4b; /* Gris oscuro para elegancia */
-  text-align: center;
-}
-
-.mision-vision h1 {
-  font-size: 2.5rem;
-  color: #a87932; /* Dorado */
-  margin-bottom: 0.5rem;
-  position: relative;
-  padding-bottom: 10px;
-}
-
-.mision-vision h1::after {
-  content: '';
-  display: block;
-  width: 60px;
-  height: 3px;
-  background-color: #eac1c1; /* Rosa un poco más oscuro */
-  margin: 10px auto 0;
-}
-
-.mision-vision p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  margin-bottom: 2rem;
-  text-align: justify; /* Alinea el texto para una mejor lectura */
-}
-
-/* === Seccion de servicios generales === */
-#servicios {
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.servicios-container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.section-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 3em;
-    color: var(--color-dark-text);
-    margin-bottom: 50px;
-    position: relative;
-    display: inline-block;
-}
-
-.section-title::after {
-    content: '';
-    display: block;
-    width: 60px;
-    height: 3px;
-    background-color: var(--color-pink-pastel);
-    margin: 10px auto 0;
-}
-
-/* Contenedor de cada servicio: usa Flexbox */
-.servicio-card {
-    display: flex;
-    align-items: center;
-    background-color: var(--color-card-background);
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-    margin-bottom: 40px;
-}
-
-/* Invertir el orden para los servicios pares */
-.servicio-card:nth-child(even) {
-    flex-direction: row-reverse;
-}
-
-/* Contenedor de la imagen */
-.card-image-wrapper {
-    flex: 1;
-}
-
-.card-image-wrapper img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    border-radius: 10px 10px;
-}
-
-/* Contenido de la tarjeta */
-.card-content {
-    flex: 1;
-    padding: 40px;
-    text-align: left;
-}
-
-.card-content h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.8em;
-    color: var(--color-dark-text);
-    margin: 0 0 15px;
-}
-
-.card-content p {
-    font-size: 1em;
-    color: #666;
-    margin: 0;
-}
-
-/* Estilo para los botones "Ver Más" */
-.cta-button {
-    display: inline-block;
-    background-color: var(--color-pink-pastel);
-    color: var(--color-dark-text);
-    padding: 12px 25px;
-    border-radius: 5px;
-    text-decoration: none; /* Quita el subrayado del enlace */
-    font-weight: bold;
-    margin-top: 20px;
-    transition: background-color 0.3s ease;
-}
-
-.cta-button:hover {
-    background-color: #e0a7c4; /* Un tono más oscuro de rosa para el efecto hover */
-}
-
-/* ========================================= */
-/* === ESTILOS ESPECÍFICOS DE LA PÁGINA DE MASAJES === */
-/* ========================================= */
-/* Sección "Hero" */
-.hero-masajes {
-    background-image: url('masaje-hero.jpg'); /* Asegúrate de tener una imagen llamada masaje-hero.jpg */
-    background-size: cover;
-    background-position: center;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #fff;
-    position: relative;
-}
-
-.hero-masajes::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-    z-index: 1;
-}
-
-.hero-content {
-    position: relative;
-    z-index: 2;
-}
-
-.hero-content h2 {
-    font-size: 48px;
-    margin: 0;
-    color: #fff;
-}
-
-.hero-content p {
-    font-size: 20px;
-    font-weight: 300;
-}
-
-/* Sección de masajes */
-.section-masajes {
-    max-width: 1000px;
-    margin: 50px auto;
-    padding: 20px;
-    text-align: center;
-}
-
-.masaje-card {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin-bottom: 30px;
-    text-align: left;
-}
-
-.masaje-card img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 15px;
-}
-
-.masaje-card h4 {
-    transform: none;
-    font-size: 24px;
-    margin: 0 0 10px 0;
-    color: #4a494d;
-}
-
-.masaje-card p {
-    font-size: 16px;
-    line-height: 1.6;
-}
-
-.price {
-    font-size: 18px;
-    font-weight: bold;
-    color: #c7a477;
-    margin-top: 15px;
-}
-
-/* Sección de llamada a la acción */
-.call-to-action {
-    background-color: #5d5c61;
-    color: #fff;
-    text-align: center;
-    padding: 50px 20px;
-}
-
-.call-to-action h3 {
-    font-size: 32px;
-    color: #fff;
-    margin-bottom: 15px;
-}
-
-.call-to-action p {
-    font-size: 18px;
-    margin-bottom: 30px;
-}
-
-.call-to-action .cta-button {
-    background-color: #c7a477;
-    color: #fff;
-    text-decoration: none;
-    padding: 15px 30px;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s;
-}
-
-.call-to-action .cta-button:hover {
-    background-color: #b38b62;
-}
-
-/* ========================================= */
-/* === ESTILOS DE GALERÍA Y FORMULARIO === */
-/* ========================================= */
-.card-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-  justify-items: center;
-  padding: 2rem 1rem;
-}
-
-.card {
-  width: 100%;
-  max-width: 18.75rem;
-  border-radius: 0.625rem;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.card img { 
-  width: 100%; 
-  height: 26.875rem;
-  object-fit: cover; 
-}
-
-.titulo-tratamientos { 
-  text-align: center; 
-  font-size: 1.5em; 
-  font-weight: bold; 
-  margin: 1.875rem 0 0 0;
-}
-
-.contenedor-boton {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 1.5625rem;
-}
-
-.btn {
-  border: 0.125rem solid #a87932;
-  background: none;
-  color: #a87932;              
-  padding: 0.625rem 1.5rem;
-  border-radius: 0.3125rem;
-  font-size: 1em;
-  cursor: pointer;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.pregunta-boton {
-  text-align: center;
-  color: #a87932;
-  font-size: 1.1em;
-  font-weight: bold;
-}
-
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;
-  margin: 2rem;
-}
-.gallery img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 12px;
-  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
-}
-.gallery img:hover {
-  transform: scale(1.05);
-}
-.container {
-  max-width: 650px;
-  margin: 2.5rem auto;
-  background: #fff;
-  padding: 2rem;
-  border-radius: 20px;
-  box-shadow: 0px 8px 20px rgba(0,0,0,0.2);
-}
-label {
-  font-weight: bold;
-  display: block;
-  margin-bottom: .4rem;
-}
-input, select, textarea {
-  width: 100%;
-  padding: .9rem;
-  margin-bottom: 1.2rem;
-  border: 1px solid #ccc;
-  border-radius: 12px;
-  font-size: 1rem;
-}
-input:focus, select:focus, textarea:focus {
-  border-color: #a17c6b;
-  outline: none;
-  box-shadow: 0 0 8px rgba(161,124,107,0.4);
-}
-button {
-  background: linear-gradient(135deg, #a17c6b, #d4b2a7);
-  color: #fff;
-  padding: 1rem;
-  border: none;
-  border-radius: 12px;
-  font-size: 1.1rem;
-  cursor: pointer;
-  width: 100%;
-  transition: transform 0.3s ease, background 0.3s ease;
-}
-button:hover {
-  background: linear-gradient(135deg, #8a6658, #b69487);
-  transform: scale(1.03);
-}
-#mensajeConfirmacion {
-  display: none;
-  text-align: center;
-  margin-top: 1.5rem;
-  padding: 1rem;
-  background: #d4b2a7;
-  color: #fff;
-  border-radius: 10px;
-  font-weight: bold;
-}
-footer {
-  text-align: center;
-  padding: 1.5rem;
-  font-size: .9rem;
-  color: #555;
-  background: #f1e7e1;
-  margin-top: 2rem;
-}
-
-/* ========================================= */
-/* === PIE DE PÁGINA (FOOTER) === */
-/* ========================================= */
-.footer { 
-  background-color: black; 
-  color: white; 
-  padding: 0.9375rem;
-  font-size: 1em;
-  height: 11.25rem;
-  display: flex;
-  justify-content: space-between; /* Alinea los elementos a los extremos */
-  align-items: center; /* Centra verticalmente */
-  padding-left: 20%; /* Ajusta el padding para simular el efecto original */
-}
-
-.redes-vertical { 
-  display: flex; 
-  flex-direction: column;
-  align-items: flex-start; /* Alinea los íconos a la izquierda */
-  gap: 0.625rem;
-  margin: 0.625rem 0;
-}
-
-.red-item { 
-  display: flex; 
-  align-items: center; 
-  gap: 0.625rem;
-}
-
-.icono-red { 
-  width: 2.1875rem;
-  height: 1.75rem;
-}
-
-.icono-red-f { 
-  width: 3.125rem;
-  height: 1.875rem;
-} 
-
-.derechos { 
-  text-align: right; /* Alinea el texto a la derecha */
-  align-self: flex-end; /* Lo mueve al final del contenedor flex */
-  transform: translateY(-90%); 
-}
-
-/* ========================================= */
-/* === MEDIA QUERIES (ADAPTACIÓN MÓVIL) === */
-/* ========================================= */
+/* === RESPONSIVE MÓVIL === */
 @media screen and (max-width: 768px) {
 
   /* Ajustes para header en móvil */
@@ -798,9 +280,447 @@ footer {
     padding: 1rem;
     justify-items: center;
   }
+
 }
 
-/* Adaptación para tabletas y dispositivos más grandes */
+
+/*HEADER*/
+
+header { 
+  background: black; 
+  color: white; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  position: relative; 
+} 
+
+.logo-container {
+  position: absolute;
+  top: -1.5rem;
+  left: 5%;
+}
+
+.logo {
+  height: 10rem;
+  width: auto;
+}
+
+.titulo { 
+  text-align: center; 
+  font-size: 2em; 
+  font-weight: bold; 
+  padding: 1.25rem 0 0.3125rem 0;
+}
+
+.lema { 
+  text-align: center;
+  font-size: 1.2em; 
+  font-style: italic; 
+  padding: 0.3125rem 0 1.25rem 0;
+  margin-bottom: 7px;
+}
+
+.imagen img { 
+  margin: 0.0625rem;
+  width: 100%;
+  height: auto;
+  max-height: 120vh;
+  object-fit: cover; 
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+  padding: 2rem 1rem;
+}
+
+
+  .card {
+  width: 100%;
+  max-width: 18.75rem;
+  border-radius: 0.625rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.card img { 
+  width: 100%; 
+  height: 26.875rem;
+  object-fit: cover; 
+}
+
+.titulo-tratamientos { 
+  text-align: center; 
+  font-size: 1.5em; 
+  font-weight: bold; 
+  margin: 1.875rem 0 0 0;
+}
+
+.contenedor-boton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5625rem;
+}
+
+.btn {
+  border: 0.125rem solid #a87932;
+  background: none;
+  color: #a87932;              
+  padding: 0.625rem 1.5rem;
+  border-radius: 0.3125rem;
+  font-size: 1em;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.pregunta-boton {
+  text-align: center;
+  color: #a87932;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+h4 { 
+  transform: translateY(164%); 
+  color: white; 
+}
+
+
+.footer { 
+  background-color: black; 
+  color: white; 
+  padding: 0.9375rem;
+  font-size: 1em;
+  height: 11.25rem;
+  display: flex;
+  justify-content: space-between; /* Alinea los elementos a los extremos */
+  align-items: center; /* Centra verticalmente */
+  padding-left: 20%; /* Ajusta el padding para simular el efecto original */
+}
+
+.redes-vertical { 
+  display: flex; 
+  flex-direction: column;
+  align-items: flex-start; /* Alinea los íconos a la izquierda */
+  gap: 0.625rem;
+  margin: 0.625rem 0;
+}
+
+.red-item { 
+  display: flex; 
+  align-items: center; 
+  gap: 0.625rem;
+}
+
+.icono-red { 
+  width: 2.1875rem;
+  height: 1.75rem;
+}
+
+.icono-red-f { 
+  width: 3.125rem;
+  height: 1.875rem;
+} 
+
+.derechos { 
+  text-align: right; /* Alinea el texto a la derecha */
+  align-self: flex-end; /* Lo mueve al final del contenedor flex */
+  transform: translateY(-90%); 
+}
+
+.mision-vision {
+  width: 90%;
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #fff0f5; /* Rosa claro pastel */
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  font-family: 'Georgia', serif;
+  color: #4b4b4b; /* Gris oscuro para elegancia */
+  text-align: center;
+}
+
+.mision-vision h1 {
+  font-size: 2.5rem;
+  color: #a87932; /* Dorado */
+  margin-bottom: 0.5rem;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.mision-vision h1::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #eac1c1; /* Rosa un poco más oscuro */
+  margin: 10px auto 0;
+}
+
+.mision-vision p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  text-align: justify; /* Alinea el texto para una mejor lectura */
+}
+/* Paleta de Colores muy sencilla */
+:root {
+    --color-pink-pastel: #f8c8dc;
+    --color-blue-pastel: #b0e0e6;
+    --color-dark-text: #2c2c2c;
+    --color-body-background: #fdf5e6; /* Un color crema muy suave para el fondo */
+    --color-card-background: #ffffff;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--color-body-background);
+    color: black;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* --- ESTILO DE LA SECCIÓN DE SERVICIOS --- */
+#servicios {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.servicios-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+    color: var(--color-dark-text);
+    margin-bottom: 50px;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: var(--color-pink-pastel);
+    margin: 10px auto 0;
+}
+
+/* Contenedor de cada servicio: usa Flexbox */
+.servicio-card {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-card-background);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    margin-bottom: 40px;
+}
+
+/* Invertir el orden para los servicios pares */
+.servicio-card:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+/* Contenedor de la imagen */
+.card-image-wrapper {
+    flex: 1;
+}
+
+.card-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px 10px;
+}
+
+/* Contenido de la tarjeta */
+.card-content {
+    flex: 1;
+    padding: 40px;
+    text-align: left;
+}
+
+.card-content h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8em;
+    color: var(--color-dark-text);
+    margin: 0 0 15px;
+}
+
+.card-content p {
+    font-size: 1em;
+    color: #666;
+    margin: 0;
+}
+
+/* Estilo para los botones "Ver Más" */
+.cta-button {
+    display: inline-block;
+    background-color: var(--color-pink-pastel);
+    color: var(--color-dark-text);
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none; /* Quita el subrayado del enlace */
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e0a7c4; /* Un tono más oscuro de rosa para el efecto hover */
+}
+
+/* --- ESTILO DE LA PÁGINA DE MASAJES --- */
+h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Hero Section */
+.hero-masajes {
+    background-image: url('masaje-hero.jpg'); /* Asegúrate de tener una imagen llamada masaje-hero.jpg */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+.hero-masajes::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content h2 {
+    font-size: 48px;
+    margin: 0;
+    color: #fff;
+}
+
+.hero-content p {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+
+/* Masajes Section */
+.section-masajes {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.masaje-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.masaje-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.masaje-card h4 {
+    transform: none;
+    font-size: 24px;
+    margin: 0 0 10px 0;
+    color: #4a494d;
+}
+
+.masaje-card p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #c7a477;
+    margin-top: 15px;
+}
+
+/* Call to Action Section */
+.call-to-action {
+    background-color: #5d5c61;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.call-to-action h3 {
+    font-size: 32px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.call-to-action p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #c7a477;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #b38b62;
+}
+
+
+/* Media Queries para diseño responsive */
+@media (min-width: 768px) {
+    .section-masajes {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    .masaje-card {
+        margin-bottom: 0;
+    }
+}
+
+/* --- ADAPTACIÓN PARA TABLETAS Y DISPOSITIVOS MÁS GRANDES --- */
+/* (Cuando la pantalla es más ancha que 768px y hasta 1024px) */
 @media (min-width: 769px) and (max-width: 1024px) {
     .section-title {
         font-size: 2.5em;
@@ -811,7 +731,8 @@ footer {
     }
 }
 
-/* Adaptación para dispositivos móviles (hasta 768px) */
+/* --- ADAPTACIÓN PARA DISPOSITIVOS MÓVILES --- */
+/* (Cuando la pantalla es de 768px o menos) */
 @media (max-width: 768px) {
     .main-header {
         padding: 30px 20px;
@@ -847,18 +768,183 @@ footer {
     }
 
     .card-content {
-        padding: 20px;
-    }
+        padding: 20px;
+    }}
 
-    .section-masajes {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 30px;
-    }
-
-    .masaje-card {
-        margin-bottom: 0;
-    }
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin: 2rem;
+}
+.gallery img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+.gallery img:hover {
+  transform: scale(1.05);
+}
+.container {
+  max-width: 650px;
+  margin: 2.5rem auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.2);
+}
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: .4rem;
+}
+input, select, textarea {
+  width: 100%;
+  padding: .9rem;
+  margin-bottom: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-size: 1rem;
+}
+input:focus, select:focus, textarea:focus {
+  border-color: #a17c6b;
+  outline: none;
+  box-shadow: 0 0 8px rgba(161,124,107,0.4);
+}
+button {
+  background: linear-gradient(135deg, #a17c6b, #d4b2a7);
+  color: #fff;
+  padding: 1rem;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  width: 100%;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+button:hover {
+  background: linear-gradient(135deg, #8a6658, #b69487);
+  transform: scale(1.03);
+}
+#mensajeConfirmacion {
+  display: none;
+  text-align: center;
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: #d4b2a7;
+  color: #fff;
+  border-radius: 10px;
+  font-weight: bold;
+}
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  font-size: .9rem;
+  color: #555;
+  background: #f1e7e1;
+  margin-top: 2rem;
 }
 
-/* Fin de la organización */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
