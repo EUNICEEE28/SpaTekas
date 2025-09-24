@@ -419,13 +419,13 @@ h4 {
 }
 
 .icono-red { 
-  width: 10%;
-  height: 40%;
+  width: 40%;
+  height: 80%;
 }
 
 .icono-red-f { 
-  width: 10%;
-  height: 40%;
+  width: 40%;
+  height: 80%;
 } 
 
 .derechos { 
@@ -847,6 +847,7 @@ footer {
   background: #f1e7e1;
   margin-top: 2rem;
 }
+
 
 
 
