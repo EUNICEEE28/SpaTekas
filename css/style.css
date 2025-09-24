@@ -419,8 +419,8 @@ h4 {
 
 .icono-red,
 .icono-red-f {
-  width: 0.5rem; /* Iconos un poco más grandes */
-  height: 1rem;
+  width: 3rem; /* Iconos un poco más grandes */
+  height: 3rem;
   flex-shrink: 0;
 }
 
@@ -868,6 +868,7 @@ footer {
   background: #f1e7e1;
   margin-top: 2rem;
 }
+
 
 
 
