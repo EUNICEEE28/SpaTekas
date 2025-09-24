@@ -391,6 +391,7 @@ h4 {
   color: white; 
 }
 
+/*Pie de página*/
 
 .footer { 
   background-color: black; 
@@ -420,12 +421,12 @@ h4 {
 
 .icono-red { 
   width: 40%;
-  height: 80%;
+  height: 20rem;
 }
 
 .icono-red-f { 
   width: 40%;
-  height: 80%;
+  height: 100%;
 } 
 
 .derechos { 
@@ -847,6 +848,7 @@ footer {
   background: #f1e7e1;
   margin-top: 2rem;
 }
+
 
 
 
