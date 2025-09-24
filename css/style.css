@@ -414,12 +414,12 @@ h4 {
 .red-item {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 0.625rem;
 }
 
 .icono-red,
 .icono-red-f {
-  width: 1rem; /* Iconos un poco más grandes */
+  width: 0.5rem; /* Iconos un poco más grandes */
   height: 1rem;
   flex-shrink: 0;
 }
@@ -868,6 +868,7 @@ footer {
   background: #f1e7e1;
   margin-top: 2rem;
 }
+
 
 
 
