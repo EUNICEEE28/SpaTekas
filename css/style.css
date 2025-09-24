@@ -153,7 +153,7 @@ nav ul li ul:before {
 .logo {
   max-width: 80%;
   height: auto;
-  margin-top: -0.5rem;
+  margin-top: -0.3rem;
 }
 
 .texto-header {
@@ -868,6 +868,7 @@ footer {
   background: #f1e7e1;
   margin-top: 2rem;
 }
+
 
 
 
