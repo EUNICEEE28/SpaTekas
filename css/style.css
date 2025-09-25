@@ -394,66 +394,46 @@ h4 {
 /*Pie de página*/
 
 .footer {
-  background-color: black;
-  color: white;
-  padding: 0.9375rem;
-  min-height: 11.25rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 15px;
+  font-size: 16px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .redes-vertical {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 0.625rem;
-  margin: 0;
+  transform: translateX(20%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
 }
 
 .red-item {
-  display: flex;
-  align-items: center;
-  gap: 0.625rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-.icono-red,
+.icono-red {
+  width: 35px;
+  height: 28px;
+}
+
 .icono-red-f {
-  width: 1.5rem; /* Un poco más grande, de 1rem a 1.5rem */
-  height: 1.5rem;
-  flex-shrink: 0;
+  width: 50px;
+  height: 30px;
 }
 
 .derechos {
-  text-align: right;
-  align-self: flex-end;
-  transform: none;
-}
+  text-align: left;
+  transform: translateY(-90%);
 
-@media (max-width: 768px) {
-  .footer {
-    flex-direction: column;
-    text-align: center;
-    padding: 1rem;
-    min-height: auto;
-  }
-
-  .redes-vertical {
-    align-items: center;
-    gap: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .red-item {
-    justify-content: center;
-  }
-  
-  .derechos {
-    text-align: center;
-    align-self: center;
-    margin-top: 1rem;
-  }
-}
 
 .mision-vision {
   width: 90%;
@@ -860,6 +840,7 @@ button:hover {
   border-radius: 10px;
   font-weight: bold;
 }
+
 
 
 
