@@ -394,21 +394,21 @@ h4 {
 /*Pie de página*/
 
 .footer {
-  background-color: black;
-  color: white;
-  padding: 0.9375rem;
-  min-height: 11.25rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 1.5rem 0.9375rem; /* Aumenta el padding vertical */
+  min-height: 11.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* IMPORTANTE: Alinea los elementos a la parte superior */
 }
 
 .redes-vertical {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 0.625rem;
-  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Alinea los elementos hijos a la derecha */
+  gap: 0.625rem;
+  margin: 0;
 }
 
 .red-item {
@@ -859,6 +859,7 @@ button:hover {
   border-radius: 10px;
   font-weight: bold;
 }
+
 
 
 
