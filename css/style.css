@@ -394,19 +394,19 @@ h4 {
 /*Pie de página*/
 
 .footer {
-  background-color: black;
+  background: black;
   color: white;
-  padding: 1.5rem 0.9375rem; /* Aumenta el padding vertical */
+  padding: 1.5rem 0.9375rem; /* Aumentado el padding superior/inferior para más espacio */
   min-height: 11.25rem;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start; /* IMPORTANTE: Alinea los elementos a la parte superior */
+  align-items: flex-start; /* 👈 CAMBIO CLAVE: Alinea el contenido a la parte superior */
 }
 
 .redes-vertical {
   display: flex;
   flex-direction: column;
-  align-items: flex-end; /* Alinea los elementos hijos a la derecha */
+  align-items: flex-end; /* 👈 CAMBIO CLAVE: Alinea las cuentas (@SPA TKAS) a la derecha */
   gap: 0.625rem;
   margin: 0;
 }
@@ -859,6 +859,7 @@ button:hover {
   border-radius: 10px;
   font-weight: bold;
 }
+
 
 
 
