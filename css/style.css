@@ -420,8 +420,8 @@ h4 {
 }
 
 .icono-red { 
-  width: 2.1875rem;
-  height: 1.75rem;
+  width: 2rem;
+  height: 2rem;
 }
 
 .derechos { 
@@ -835,6 +835,7 @@ button:hover {
   border-radius: 10px;
   font-weight: bold;
 }
+
 
 
 
