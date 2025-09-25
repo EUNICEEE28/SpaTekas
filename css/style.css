@@ -419,8 +419,8 @@ h4 {
 
 .icono-red,
 .icono-red-f {
-  width: 3rem; /* Iconos un poco más grandes */
-  height: 3rem;
+  width: 8rem; /* Iconos un poco más grandes */
+  height: 10rem;
   flex-shrink: 0;
 }
 
@@ -860,6 +860,7 @@ button:hover {
   border-radius: 10px;
   font-weight: bold;
 }
+
 
 
 
