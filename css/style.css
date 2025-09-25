@@ -410,25 +410,30 @@ h4 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 5px;
+  gap: 10px;
   margin: 10px 0;
 }
 
 .red-item {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 10px;
 }
 
-.icono-red,
+.icono-red {
+  width: 35px;
+  height: 28px;
+}
+
 .icono-red-f {
-  width: 10%;
-  height: 30%;
+  width: 50px;
+  height: 30px;
 }
 
 .derechos {
   text-align: left;
-}
+  transform: translateY(-90%);
+
 
 .mision-vision {
   width: 90%;
@@ -835,6 +840,7 @@ button:hover {
   border-radius: 10px;
   font-weight: bold;
 }
+
 
 
 
