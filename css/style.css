@@ -419,8 +419,8 @@ h4 {
 
 .icono-red,
 .icono-red-f {
-  width: 8rem; /* Iconos un poco más grandes */
-  height: 10rem;
+  width: 12rem; /* Aumentado de 8rem a 12rem */
+  height: 15rem; /* Aumentado de 10rem a 15rem */
   flex-shrink: 0;
 }
 
@@ -429,7 +429,6 @@ h4 {
   align-self: flex-end;
   transform: none;
 }
-
 @media (max-width: 768px) {
   .footer {
     flex-direction: column;
@@ -860,6 +859,7 @@ button:hover {
   border-radius: 10px;
   font-weight: bold;
 }
+
 
 
 
