@@ -394,41 +394,42 @@ h4 {
 /*Pie de página*/
 
 .footer {
-  background: black;
+  background-color: black;
   color: white;
-  padding: 1.5rem 0.9375rem; /* Aumentado el padding superior/inferior para más espacio */
+  padding: 0.9375rem;
   min-height: 11.25rem;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start; /* 👈 CAMBIO CLAVE: Alinea el contenido a la parte superior */
+  align-items: center;
 }
 
 .redes-vertical {
   display: flex;
   flex-direction: column;
-  align-items: flex-end; /* 👈 CAMBIO CLAVE: Alinea las cuentas (@SPA TKAS) a la derecha */
+  align-items: flex-start;
   gap: 0.625rem;
   margin: 0;
 }
 
 .red-item {
-  display: flex;
-  align-items: center;
-  gap: 0.625rem;
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
 }
 
 .icono-red,
 .icono-red-f {
-  width: 1.5rem; /* Un poco más grande, de 1rem a 1.5rem */
-  height: 1.5rem;
-  flex-shrink: 0;
+  width: 1.5rem; /* Un poco más grande, de 1rem a 1.5rem */
+  height: 1.5rem;
+  flex-shrink: 0;
 }
 
 .derechos {
-  text-align: right;
-  align-self: flex-end;
-  transform: none;
-}
+  text-align: right;
+  align-self: flex-end;
+  transform: none;
+} 
+oye pero no se ve bien
 @media (max-width: 768px) {
   .footer {
     flex-direction: column;
@@ -859,6 +860,7 @@ button:hover {
   border-radius: 10px;
   font-weight: bold;
 }
+
 
 
 
