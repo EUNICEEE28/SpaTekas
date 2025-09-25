@@ -393,47 +393,47 @@ h4 {
 
 /*Pie de página*/
 
-.footer {
-  background-color: black;
-  color: white;
-  padding: 15px;
-  font-size: 16px;
-  height: 180px;
+.footer { 
+  background-color: black; 
+  color: white; 
+  padding: 0.9375rem;
+  font-size: 1em;
+  height: 11.25rem;
   display: flex;
+  justify-content: space-between; /* Alinea los elementos a los extremos */
+  align-items: center; /* Centra verticalmente */
+  padding-left: 20%; /* Ajusta el padding para simular el efecto original */
+}
+
+.redes-vertical { 
+  display: flex; 
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  align-items: flex-start; /* Alinea los íconos a la izquierda */
+  gap: 0.625rem;
+  margin: 0.625rem 0;
 }
 
-.redes-vertical {
-  transform: translateX(20%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  margin: 10px 0;
+.red-item { 
+  display: flex; 
+  align-items: center; 
+  gap: 0.625rem;
 }
 
-.red-item {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+.icono-red { 
+  width: 2.1875rem;
+  height: 1.75rem;
 }
 
-.icono-red {
-  width: 35px;
-  height: 28px;
+.icono-red-f { 
+  width: 3.125rem;
+  height: 1.875rem;
+} 
+
+.derechos { 
+  text-align: right; /* Alinea el texto a la derecha */
+  align-self: flex-end; /* Lo mueve al final del contenedor flex */
+  transform: translateY(-90%); 
 }
-
-.icono-red-f {
-  width: 50px;
-  height: 30px;
-}
-
-.derechos {
-  text-align: left;
-  transform: translateY(-90%);
-
 
 .mision-vision {
   width: 90%;
@@ -840,6 +840,7 @@ button:hover {
   border-radius: 10px;
   font-weight: bold;
 }
+
 
 
 
