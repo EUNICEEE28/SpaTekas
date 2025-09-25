@@ -424,11 +424,6 @@ h4 {
   height: 1.75rem;
 }
 
-.icono-red-f { 
-  width: 3.125rem;
-  height: 1.875rem;
-} 
-
 .derechos { 
   text-align: right; /* Alinea el texto a la derecha */
   align-self: flex-end; /* Lo mueve al final del contenedor flex */
@@ -840,6 +835,7 @@ button:hover {
   border-radius: 10px;
   font-weight: bold;
 }
+
 
 
 
