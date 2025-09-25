@@ -417,8 +417,8 @@ h4 {
 }
 
 .icono-red {
-    width: 80px;
-    height: 80px;
+    width: 40px;
+    height: 40px;
 }
 
 @media (min-width: 768px) {
@@ -847,6 +847,7 @@ button:hover {
   border-radius: 10px;
   font-weight: bold;
 }
+
 
 
 
