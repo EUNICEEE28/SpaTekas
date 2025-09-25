@@ -393,35 +393,47 @@ h4 {
 
 /*Pie de página*/
 
-.footer { 
-  background-color: black; 
-  color: white; 
-  padding: 0.9375rem;
-  font-size: 1em;
-  height: 11.25rem;
-  display: flex;
-  justify-content: space-between; /* Alinea los elementos a los extremos */
-  align-items: center; /* Centra verticalmente */
-  padding-left: 20%; /* Ajusta el padding para simular el efecto original */
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 2rem 1rem;
+    font-family: Arial, sans-serif;
+    text-align: center;
 }
 
-.redes-vertical { 
-  display: flex; 
-  flex-direction: column;
-  align-items: flex-start; /* Alinea los íconos a la izquierda */
-  gap: 0.625rem;
-  margin: 0.625rem 0;
+.redes-vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
 }
 
-.red-item { 
-  display: flex; 
-  align-items: center; 
-  gap: 0.625rem;
+.red-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
-.icono-red { 
-  width: 2rem;
-  height: 2rem;
+.icono-red {
+    width: 30px;
+    height: 30px;
+}
+
+@media (min-width: 768px) {
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+
+    .redes-vertical {
+        flex-direction: row;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
 }
 
 .derechos { 
@@ -835,6 +847,7 @@ button:hover {
   border-radius: 10px;
   font-weight: bold;
 }
+
 
 
 
