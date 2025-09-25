@@ -410,20 +410,20 @@ h4 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
   margin: 10px 0;
 }
 
 .red-item {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
 }
 
 .icono-red,
 .icono-red-f {
-  width: 50%;
-  height: 60%;
+  width: 10%;
+  height: 30%;
 }
 
 .derechos {
@@ -835,6 +835,7 @@ button:hover {
   border-radius: 10px;
   font-weight: bold;
 }
+
 
 
 
