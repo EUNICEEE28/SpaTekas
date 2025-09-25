@@ -420,20 +420,15 @@ h4 {
   gap: 10px;
 }
 
-.icono-red {
-  width: 35px;
-  height: 28px;
-}
-
+.icono-red,
 .icono-red-f {
-  width: 50px;
-  height: 30px;
+  width: 50%;
+  height: 60%;
 }
 
 .derechos {
   text-align: left;
-  transform: translateY(-90%);
-
+}
 
 .mision-vision {
   width: 90%;
@@ -840,6 +835,7 @@ button:hover {
   border-radius: 10px;
   font-weight: bold;
 }
+
 
 
 
