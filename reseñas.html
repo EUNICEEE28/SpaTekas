@@ -1,1 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reseñas de Spa Tkas</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <section>
+        <h1 class="inicio">Tu oasis de tranquilidad y relajación</h1>
+    </section>
 
+    <main class="container">
+        <section class="reviews-section">
+            <h2>Reseñas de Nuestros Clientes</h2>
+            <div class="review">
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <h3>Un verdadero paraíso</h3>
+                <p>El masaje relajante fue increíble. El ambiente es muy tranquilo y el personal es muy amable. ¡Volveré sin duda!</p>
+                <span class="reviewer-name">- Ana G.</span>
+            </div>
+            <div class="review">
+                <div class="rating">⭐⭐⭐⭐</div>
+                <h3>Muy buen servicio</h3>
+                <p>El facial que me hicieron dejó mi piel radiante. Solo un pequeño retraso al inicio, pero valió la pena la espera.</p>
+                <span class="reviewer-name">- Carlos R.</span>
+            </div>
+            <div class="review">
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <h3>Experiencia sublime</h3>
+                <p>Disfruté de la sesión de aromaterapia y reflexología. Fue exactamente lo que necesitaba para desconectar del estrés.</p>
+                <span class="reviewer-name">- Laura M.</span>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <h2>Deja tu Reseña</h2>
+            <form id="review-form">
+                <label for="name">Tu Nombre:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="rating">Tu Valoración (1-5 Estrellas):</label>
+                <select id="rating" name="rating" required>
+                    <option value="5">⭐⭐⭐⭐⭐</option>
+                    <option value="4">⭐⭐⭐⭐</option>
+                    <option value="3">⭐⭐⭐</option>
+                    <option value="2">⭐⭐</option>
+                    <option value="1">⭐</option>
+                </select>
+
+                <label for="review-text">Tu Reseña:</label>
+                <textarea id="review-text" name="review-text" rows="5" required></textarea>
+
+                <button type="submit">Enviar Reseña</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <p>WhatsApp: 7793-3035</p>
+
+        <div class="redes-vertical">
+            <div class="red-item">
+                <span>@SPA TKAS</span>
+                <img src="imagenes/tiktok.png" alt="TikTok" class="icono-red">
+            </div>
+            <div class="red-item">
+                <span>@SPA TKAS</span>
+                <img src="imagenes/facebook.png" alt="Facebook" class="icono-red-f">
+            </div>
+            <div class="red-item">
+                <span>@SPA TKAS</span>
+                <img src="imagenes/instagram.png" alt="Instagram" class="icono-red">
+            </div>
+        </div>
+
+        <p>© 2025 SPA TKAS. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
