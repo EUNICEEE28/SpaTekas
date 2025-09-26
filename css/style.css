@@ -696,99 +696,136 @@ h2, h3, h4 {
     background-color: #b38b62;
 }
 
-.container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
+/* --- ESTILOS ESPECÍFICOS PARA LA SECCIÓN DE EXFOLIANTES --- */
+/* Prefijos 'exf-' para evitar conflictos con tus clases existentes */
 
-        /* Estilos para la sección de exfoliantes */
-        .exfoliantes-section {
-            padding: 60px 0; /* Más padding para que la sección destaque */
-            background-color: #fff; /* Fondo blanco para la sección */
-            text-align: center; /* Centrar el título y eslogan */
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Sutil sombra para la sección */
-        }
+.exf-section {
+    padding: 60px 0;
+    background-color: #fff; /* Fondo blanco para la sección, ajustado a tu estilo */
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Sutil sombra, en línea con tus sombras */
+    /* Puedes ajustar el color de fondo para que coincida con tu `body` si la sección está directamente en él */
+    /* background-color: #f8f4f0; /* Si quieres que el fondo sea el mismo que tu body */
+}
 
-        .exfoliantes-section h2 {
-            font-size: 3em; /* Título más grande para destacar */
-            color: #5a4b41;
-            margin-bottom: 15px;
-        }
+.exf-container { /* Clase específica para el contenedor interno de la sección */
+    max-width: 1200px; /* Ancho máximo similar a tu .menu */
+    margin: 0 auto;
+    padding: 20px;
+}
 
-        .exfoliantes-section .slogan {
-            font-size: 1.5em; /* Eslogan prominente */
-            color: #777;
-            margin-bottom: 40px; /* Espacio después del eslogan */
-            font-style: italic; /* Eslogan en cursiva */
-        }
+.exf-title {
+    font-family: 'Playfair Display', serif; /* Usando tu fuente 'Playfair Display' */
+    font-size: 3em; /* Tamaño de título grande */
+    color: #5a4b41; /* Color similar al de tus títulos o elementos oscuros */
+    margin-bottom: 15px;
+    position: relative;
+    display: inline-block; /* Necesario para que el ::after se posicione correctamente */
+}
 
-        .exfoliantes-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 40px; /* Espacio entre el eslogan y las tarjetas */
-        }
+.exf-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #eac1c1; /* Color similar a tu menú o línea divisoria */
+    margin: 10px auto 0;
+}
 
-        .exfoliante-card {
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-            text-align: center;
-        }
+.exf-slogan {
+    font-size: 1.5em; /* Eslogan prominente */
+    color: #777; /* Un gris neutro */
+    margin-bottom: 40px;
+    font-style: italic; /* Eslogan en cursiva */
+    /* Asegúrate de que 'Roboto' o 'Arial' sea la fuente por defecto del body para este texto */
+}
 
-        .exfoliante-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-        }
+.exf-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Rejilla adaptable */
+    gap: 30px; /* Espacio entre las tarjetas */
+    margin-top: 40px;
+}
 
-        .exfoliante-card img {
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
-            display: block;
-        }
+.exf-card {
+    background-color: #fff; /* Fondo blanco para cada tarjeta */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave para las tarjetas */
+    overflow: hidden; /* Asegura que la imagen no sobresalga */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Animación al pasar el ratón */
+    text-align: center;
+}
 
-        .exfoliante-card-content {
-            padding: 25px;
-        }
+.exf-card:hover {
+    transform: translateY(-5px); /* Pequeño levantamiento al pasar el ratón */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada al pasar el ratón */
+}
 
-        .exfoliante-card h3 {
-            font-size: 1.8em;
-            color: #6a8e7e;
-            margin-bottom: 15px;
-        }
+.exf-card img {
+    width: 100%;
+    height: 250px; /* Altura fija para las imágenes */
+    object-fit: cover; /* Recorta la imagen para cubrir el espacio */
+    display: block;
+    border-radius: 10px 10px 0 0; /* Bordes redondeados solo en la parte superior de la imagen */
+}
 
-        .exfoliante-card p {
-            font-size: 1.05em;
-            line-height: 1.6;
-            color: #555;
-            margin-bottom: 20px;
-        }
+.exf-card-content {
+    padding: 25px; /* Espacio interno del contenido de la tarjeta */
+}
 
-        .exfoliante-card .price {
-            font-size: 1.4em;
-            font-weight: bold;
-            color: #b38e5d;
-            margin-bottom: 20px;
-        }
+.exf-card h3 {
+    font-family: 'Playfair Display', serif; /* Títulos de tarjeta con tu fuente */
+    font-size: 1.8em;
+    color: #6a8e7e; /* Un color de acento, puedes ajustar */
+    margin-bottom: 15px;
+}
 
-        .btn {
-            display: inline-block;
-            background-color: #6a8e7e;
-            color: #fff;
-            padding: 12px 25px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
-        }
+.exf-card p {
+    font-size: 1.05em;
+    line-height: 1.6;
+    color: #555; /* Color de texto para descripciones */
+    margin-bottom: 20px;
+}
 
-        .btn:hover {
-            background-color: #5b7a6c;
-        }
+.exf-price { /* Estilo para el precio */
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #b38e5d; /* Color de acento para el precio, similar a tus otros precios */
+    margin-bottom: 20px;
+}
+
+.exf-btn { /* Estilo para el botón de "Reservar" */
+    display: inline-block;
+    background-color: #a17c6b; /* Color similar a tus botones principales */
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.exf-btn:hover {
+    background-color: #8a6658; /* Color de hover de tu botón general */
+    transform: scale(1.03); /* Ligero crecimiento al pasar el ratón */
+}
+
+/* Media Queries para esta sección de exfoliantes */
+@media (max-width: 768px) {
+    .exf-section {
+        padding: 40px 0;
+    }
+    .exf-title {
+        font-size: 2.5em;
+    }
+    .exf-slogan {
+        font-size: 1.2em;
+    }
+    .exf-grid {
+        grid-template-columns: 1fr; /* Una columna en dispositivos móviles */
+        gap: 20px;
+    }
+}
 
 
 /* Media Queries para diseño responsive */
