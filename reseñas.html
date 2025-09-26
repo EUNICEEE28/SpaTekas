@@ -1,13 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <title>Document</title>
-    <script src="https://kit.fontawesome.com/eb6eec8594.js" crossorigin="anonymous"></script>
+    <title>Reseñas de Spa Tkas</title>
     <link rel="stylesheet" href="css/style.css">
-
 </head>
 <body>
     <header>
@@ -39,7 +36,7 @@
                             </ul>
                         </li>
                         <li><a href="galeria.html">Galería</a></li>
-                        <li><a href="#">Reseñas</a></li>
+                        <li><a href="">Reseñas</a></li>
                         <li><a href="reservas.html">Reservas</a></li>
                         <li><a href="contacto.html">Contacto</a></li>
                     </ul>
@@ -47,44 +44,52 @@
             </div>
        </div>
     </header>
-
-    <main>
-        <section class="hero-masajes">
-            <div class="hero-content">
-                <h2>Masajes Relajantes</h2>
-                <p>Escápate del estrés y renueva tu energía con nuestros tratamientos.</p>
+    <section>
+        <h1 class="inicio">Tu oasis de tranquilidad y relajación</h1>
+    </section>
+    <main class="container-body">
+        <section class="reviews-section">
+            <h2 id="linea">Reseñas de Nuestros Clientes</h2>
+            <div class="review">
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <h3>Un verdadero paraíso</h3>
+                <p>El masaje relajante fue increíble. El ambiente es muy tranquilo y el personal es muy amable. ¡Volveré sin duda!</p>
+                <span class="reviewer-name">- Ana G.</span>
+            </div>
+            <div class="review">
+                <div class="rating">⭐⭐⭐⭐</div>
+                <h3>Muy buen servicio</h3>
+                <p>El facial que me hicieron dejó mi piel radiante. Solo un pequeño retraso al inicio, pero valió la pena la espera.</p>
+                <span class="reviewer-name">- Carlos R.</span>
+            </div>
+            <div class="review">
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <h3>Experiencia sublime</h3>
+                <p>Disfruté de la sesión de aromaterapia y reflexología. Fue exactamente lo que necesitaba para desconectar del estrés.</p>
+                <span class="reviewer-name">- Laura M.</span>
             </div>
         </section>
 
-        <section class="section-masajes">
+        <section class="form-section">
+            <h2>Deja tu Reseña</h2>
+            <form id="review-form">
+                <label for="name">Tu Nombre:</label>
+                <input type="text" id="name" name="name" required>
 
+                <label for="rating">Tu Valoración (1-5 Estrellas):</label>
+                <select id="rating" name="rating" required>
+                    <option value="5">⭐⭐⭐⭐⭐</option>
+                    <option value="4">⭐⭐⭐⭐</option>
+                    <option value="3">⭐⭐⭐</option>
+                    <option value="2">⭐⭐</option>
+                    <option value="1">⭐</option>
+                </select>
 
-            <div class="masaje-card">
-                <img src="imagenes/masajesueco.jpg" alt="Masaje relajante tradicional">
-                <h4 >Masaje Sueco</h4>
-                <p>Un clásico que utiliza movimientos largos y fluidos para liberar la tensión muscular, mejorar la circulación y promover una profunda sensación de calma. Ideal para quienes buscan una primera experiencia de relajación.</p>
-                <div class="price">60 min - $50</div>
-            </div>
+                <label for="review-text">Tu Reseña:</label>
+                <textarea id="review-text" name="review-text" rows="5" required></textarea>
 
-            <div class="masaje-card">
-                <img src="imagenes/tejidoprofundo.jpg" alt="Masaje de tejido profundo">
-                <h4>Masaje de Tejido Profundo</h4>
-                <p>Este masaje se centra en las capas más profundas del tejido muscular. Utiliza presión más intensa para liberar nudos y adherencias crónicas, aliviando dolores y mejorando la postura. Perfecto para atletas o personas con tensión severa.</p>
-                <div class="price">75 min - $65</div>
-            </div>
-
-            <div class="masaje-card">
-                <img src="imagenes/piedrascalientes.jpg" alt="Masaje con piedras calientes">
-                <h4>Piedras Calientes</h4>
-                <p>Se utilizan piedras volcánicas calientes para aplicar calor profundo en puntos específicos. Es excelente para aliviar dolores crónicos, relajar músculos rígidos y equilibrar la energía del cuerpo.</p>
-                <div class="price">90 min - $80</div>
-            </div>
-        </section>
-
-        <section class="call-to-action">
-            <h3>¡Reserva tu Momento de Paz!</h3>
-            <p>Déjanos guiarte hacia una relajación total. Contáctanos hoy para programar tu cita.</p>
-            <a href="reservas.html" class="cta-button">Reservar Ahora</a>
+                <button type="submit">Enviar Reseña</button>
+            </form>
         </section>
     </main>
     <footer class="footer">

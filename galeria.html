@@ -40,67 +40,54 @@
                         <li><a href="#">Galería</a></li>
                         <li><a href="#">Reseñas</a></li>
                         <li><a href="reservas.html">Reservas</a></li>
-                        <li><a href="#">Contacto</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
                     </ul>
                 </nav>
             </div>
        </div>
     </header>
     <style>
-       .galeria {
-           display: grid;
-           grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-           gap: 20px;
-           padding: 20px;
-       }
-       .item {
-           background: white;
-           border-radius: 10px;
-           box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-           overflow: hidden;
-       }
-       .item img { 
-           width: 100%;
-           height: auto;
-       }
-       .descripcion {
-           padding: 15px;
-       }
-       h2 {
-           text-align: center;
-           margin-bottom: 20px;
-       }
-    
-       #aromaterapia > img{
-           height: 44%;
-       }
-    
-       #faciales > img{
-           height: 44%;
-       }
-    
-       #relajacion > img{
-           height: 44%;
-       }
-    
-       #estetica > img{
-           height: 44%;
-       }
-        #galeria {
-            font-family: 'Playfair Display', serif;
-            font-size: 3em;
-            color: var(--color-dark-text);
-            margin-bottom: 50px;
-            position: relative;
-            display: flex;
-            justify-content: center;
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .item {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .item img {
+            width: 100%;
+            height: auto;
+        }
+        .descripcion {
+            padding: 15px;
+        }
+        h2 {
             text-align: center;
-            margin-left: 250px;
-            margin-top: 60px;
+            margin-bottom: 20px;
+        }
+
+        #aromaterapia > img{
+            height: 44%;
+        }
+
+        #faciales > img{
+            height: 44%;
+        }
+
+        #relajacion > img{
+            height: 44%;
+        }
+
+        #estetica > img{
+            height: 44%;
         }
     </style>
     <main>
-        <h2 id="galeria">Galería de Instalaciones - Salón de Spa</h2>
+        <h2 id="galeria">Galería de Instalaciones</h2>
         <div class="galeria">
             <div class="item">
                 <img src="imagenes/recepcion.jpg" alt="Recepción del Spa">
@@ -148,24 +135,17 @@
         </div>
     </main>
     <footer class="footer">
-        <p>WhatsApp: 7793-3035</p>
-
-        <div class="redes-vertical">
-            <div class="red-item">
-                <span>@SPA TKAS</span>
-                <img src="imagenes/tiktok.png" alt="TikTok" class="icono-red">
-            </div>
-            <div class="red-item">
-                <span>@SPA TKAS</span>
-                <img src="imagenes/facebook.png" alt="Facebook" class="icono-red-f">
-            </div>
-            <div class="red-item">
-                <span>@SPA TKAS</span>
-                <img src="imagenes/instagram.png" alt="Instagram" class="icono-red">
-            </div>
+        <div class="social-icons">
+            <a href="#"><img src="imagenes/FACEBOOK2 (1).svg" alt=""></a>
+            <a href="#"><img src="imagenes/TIKTOK1.svg" alt=""></a>
+            <a href="#"><img src="imagenes/INSTAGRAM3.svg" alt=""></a>
         </div>
-
-        <p>© 2025 SPA TKAS. Todos los derechos reservados.</p>
+        <div class="contact-info">
+            <p>Contacto: 7793 3035</p>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Todos los derechos reservados</p>
+        </div>
     </footer>
 
 </body>
