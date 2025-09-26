@@ -392,54 +392,38 @@ h4 {
 }
 
 /*Pie de página*/
-
 .footer {
-    background-color: #000;
-    color: #fff;
-    padding: 4rem 1rem;
-    text-align: center;
-}
+            background-color: #222;
+            color: #fff;
+            padding: 30px 20px;
+            text-align: center;
+            font-family: sans-serif;
+        }
 
-.redes-vertical {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    margin-top: 1rem;
-    margin-bottom: 1.5rem;
-}
+        .social-icons {
+            margin-bottom: 20px;
+        }
 
-.red-item {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
+        .social-icons a img {
+            width: 30px;
+            margin: 0 10px;
+            transition: transform 0.3s ease;
+        }
 
-.icono-red {
-    width: 40px;
-    height: 40px;
-}
+        .social-icons a img:hover {
+            transform: scale(1.2);
+        }
 
-@media (min-width: 768px) {
-    .footer {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        text-align: left;
-    }
+        .contact-info {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
 
-    .redes-vertical {
-        flex-direction: row;
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-}
-
-.derechos { 
-  text-align: right; /* Alinea el texto a la derecha */
-  align-self: flex-end; /* Lo mueve al final del contenedor flex */
-  transform: translateY(-90%); 
-}
+        .footer-bottom {
+            font-size: 14px;
+            border-top: 1px solid #444;
+            padding-top: 15px;
+        }
 
 .mision-vision {
   width: 90%;
@@ -936,6 +920,7 @@ button:hover {
         form button:hover {
             background-color: #d4b2a7;
         }
+
 
 
 
