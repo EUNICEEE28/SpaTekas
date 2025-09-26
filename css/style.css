@@ -874,12 +874,10 @@ button:hover {
             margin-bottom: 30px;
         }
         
-        h2 {
-            color: #ac6869;
+        #linea {
             border-bottom: 2px solid #eca4a4;
             padding-bottom: 10px;
             margin-bottom: 20px;
-            font-family: 'Playfair Display', serif;
         }
         
         .review {
@@ -937,6 +935,7 @@ button:hover {
         form button:hover {
             background-color: #d4b2a7;
         }
+
 
 
 
