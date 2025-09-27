@@ -573,127 +573,354 @@ body {
     background-color: #e0a7c4; /* Un tono más oscuro de rosa para el efecto hover */
 }
 
-/* --- ESTILO DE LA PÁGINA DE MASAJES --- */
-h2, h3, h4 {
-    font-family: 'Playfair Display', serif;
-}
+/* --- ESTILOS ESPECÍFICOS PARA LA SECCIÓN DE MASAJES --- */
+/* Prefijos 'mas-' para evitar conflictos */
 
-/* Hero Section */
-.hero-masajes {
-    background-image: url('masaje-hero.jpg'); /* Asegúrate de tener una imagen llamada masaje-hero.jpg */
-    background-size: cover;
-    background-position: center;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.mas-section {
+    padding: 60px 0;
+    background-color: #FADDE1; /* Fondo rosa muy claro */
     text-align: center;
-    color: #fff;
-    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Sombra sutil */
 }
 
-.hero-masajes::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-    z-index: 1;
-}
-
-.hero-content {
-    position: relative;
-    z-index: 2;
-}
-
-.hero-content h2 {
-    font-size: 48px;
-    margin: 0;
-    color: #fff;
-}
-
-.hero-content p {
-    font-size: 20px;
-    font-weight: 300;
-}
-
-
-/* Masajes Section */
-.section-masajes {
-    max-width: 1000px;
-    margin: 50px auto;
+.mas-container {
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
-    text-align: center;
 }
 
-.masaje-card {
+.mas-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+    color: #DD9E9E; /* Rosa más oscuro para el título */
+    margin-bottom: 15px;
+    position: relative;
+    display: inline-block;
+}
+
+.mas-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #EAC1C1; /* Color de tu menú */
+    margin: 10px auto 0;
+}
+
+.mas-slogan {
+    font-size: 1.5em;
+    color: #777; /* Gris neutro para el eslogan */
+    margin-bottom: 40px;
+    font-style: italic;
+}
+
+.mas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.mas-card {
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin-bottom: 30px;
-    text-align: left;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: center;
 }
 
-.masaje-card img {
+.mas-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.mas-card img {
     width: 100%;
-    height: auto;
-    border-radius: 8px;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px 10px 0 0;
+}
+
+.mas-card-content {
+    padding: 25px;
+}
+
+.mas-card h3 { /* Cambiado de h4 a h3 para consistencia */
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8em;
+    color: #EAC1C1; /* Rosa suave para títulos de tarjetas */
     margin-bottom: 15px;
 }
 
-.masaje-card h4 {
-    transform: none;
-    font-size: 24px;
-    margin: 0 0 10px 0;
-    color: #4a494d;
-}
-
-.masaje-card p {
-    font-size: 16px;
+.mas-card p {
+    font-size: 1.05em;
     line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
 }
 
-.price {
-    font-size: 18px;
+.mas-price {
+    font-size: 1.4em;
     font-weight: bold;
-    color: #c7a477;
-    margin-top: 15px;
+    color: #DD9E9E; /* Rosa un poco más oscuro para el precio */
+    margin-bottom: 20px;
 }
 
-/* Call to Action Section */
-.call-to-action {
-    background-color: #5d5c61;
-    color: #fff;
+.mas-btn {
+    display: inline-block;
+    background-color: #F2C7D0; /* Rosa pastel suave para el botón */
+    color: #333; /* Texto oscuro para contrastar */
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.mas-btn:hover {
+    background-color: #EAC1C1; /* Un rosa más intenso al pasar el ratón */
+    transform: scale(1.03);
+    color: white;
+}
+
+/* Call to Action para Masajes - adaptado al estilo de la sección */
+.mas-cta-section {
+    background-color: #F2C7D0; /* Rosa pastel suave */
+    color: #333; /* Texto oscuro */
     text-align: center;
     padding: 50px 20px;
+    margin-top: 60px; /* Espacio después de las tarjetas */
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.03); /* Sombra superior sutil */
 }
 
-.call-to-action h3 {
-    font-size: 32px;
-    color: #fff;
+.mas-cta-section h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    color: #DD9E9E; /* Rosa más oscuro para el título del CTA */
     margin-bottom: 15px;
 }
 
-.call-to-action p {
-    font-size: 18px;
+.mas-cta-section p {
+    font-size: 1.2em;
     margin-bottom: 30px;
+    color: #555;
 }
 
-.cta-button {
-    background-color: #c7a477;
-    color: #fff;
-    text-decoration: none;
+.mas-cta-button { /* Botón específico para CTA de masajes */
+    display: inline-block;
+    background-color: #EAC1C1; /* Color de tu menú */
+    color: white;
     padding: 15px 30px;
     border-radius: 5px;
+    text-decoration: none;
     font-weight: bold;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.cta-button:hover {
-    background-color: #b38b62;
+.mas-cta-button:hover {
+    background-color: #DD9E9E; /* Rosa más oscuro para hover */
+    transform: scale(1.05);
+}
+
+
+/* Media Queries para la sección de masajes */
+@media (max-width: 768px) {
+    .mas-section {
+        padding: 40px 0;
+    }
+    .mas-title {
+        font-size: 2.5em;
+    }
+    .mas-slogan {
+        font-size: 1.2em;
+    }
+    .mas-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .mas-card img {
+        height: 200px;
+    }
+    .mas-cta-section h3 {
+        font-size: 2em;
+    }
+}
+
+/* --- ESTILOS ESPECÍFICOS PARA LA SECCIÓN DE FACIALES --- */
+/* Prefijos 'fac-' para evitar conflictos */
+
+.fac-section {
+    padding: 60px 0;
+    background-color: #FADDE1; /* Fondo rosa muy claro */
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Sombra sutil */
+}
+
+.fac-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.fac-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+    color: #DD9E9E; /* Rosa más oscuro para el título */
+    margin-bottom: 15px;
+    position: relative;
+    display: inline-block;
+}
+
+.fac-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #EAC1C1; /* Color de tu menú */
+    margin: 10px auto 0;
+}
+
+.fac-slogan {
+    font-size: 1.5em;
+    color: #777; /* Gris neutro para el eslogan */
+    margin-bottom: 40px;
+    font-style: italic;
+}
+
+.fac-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.fac-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: center;
+}
+
+.fac-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.fac-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px 10px 0 0;
+}
+
+.fac-card-content {
+    padding: 25px;
+}
+
+.fac-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8em;
+    color: #EAC1C1; /* Rosa suave para títulos de tarjetas */
+    margin-bottom: 15px;
+}
+
+.fac-card p {
+    font-size: 1.05em;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.fac-price {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #DD9E9E; /* Rosa un poco más oscuro para el precio */
+    margin-bottom: 20px;
+}
+
+.fac-btn {
+    display: inline-block;
+    background-color: #F2C7D0; /* Rosa pastel suave para el botón */
+    color: #333; /* Texto oscuro para contrastar */
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.fac-btn:hover {
+    background-color: #EAC1C1; /* Un rosa más intenso al pasar el ratón */
+    transform: scale(1.03);
+    color: white;
+}
+
+/* Call to Action para Faciales - adaptado al estilo de la sección */
+.fac-cta-section {
+    background-color: #F2C7D0; /* Rosa pastel suave */
+    color: #333; /* Texto oscuro */
+    text-align: center;
+    padding: 50px 20px;
+    margin-top: 60px; /* Espacio después de las tarjetas */
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.03); /* Sombra superior sutil */
+}
+
+.fac-cta-section h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    color: #DD9E9E; /* Rosa más oscuro para el título del CTA */
+    margin-bottom: 15px;
+}
+
+.fac-cta-section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.fac-cta-button { /* Botón específico para CTA de faciales */
+    display: inline-block;
+    background-color: #EAC1C1; /* Color de tu menú */
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.fac-cta-button:hover {
+    background-color: #DD9E9E; /* Rosa más oscuro para hover */
+    transform: scale(1.05);
+}
+
+
+/* Media Queries para la sección de faciales */
+@media (max-width: 768px) {
+    .fac-section {
+        padding: 40px 0;
+    }
+    .fac-title {
+        font-size: 2.5em;
+    }
+    .fac-slogan {
+        font-size: 1.2em;
+    }
+    .fac-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .fac-card img {
+        height: 200px;
+    }
+    .fac-cta-section h3 {
+        font-size: 2em;
+    }
 }
 
 /* --- ESTILOS ESPECÍFICOS PARA LA SECCIÓN DE EXFOLIANTES --- */
