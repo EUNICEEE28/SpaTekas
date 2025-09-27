@@ -11,8 +11,9 @@
   height: 70px;
   background: #eac1c1;
   position: relative;
+  padding: 0px 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  margin-top: -20px;
+  margin-top: -10px;
 }
 
 .menu {
@@ -1601,6 +1602,7 @@ button:hover {
         form button:hover {
             background-color: #d4b2a7;
         }
+
 
 
 
