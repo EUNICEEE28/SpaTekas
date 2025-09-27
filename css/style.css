@@ -1097,6 +1097,7 @@ body {
 
 .servicio-manicure-pedicure h4 {
     font-size: 1.4em;
+    transform: none;
     color: #4E342E; /* Café oscuro para destacar el nombre del servicio */
     margin-top: 20px;
     margin-bottom: 10px;
