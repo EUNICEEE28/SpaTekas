@@ -153,7 +153,7 @@ nav ul li ul:before {
 .logo {
   max-width: 80%;
   height: auto;
-  margin-top: -0.3rem;
+  margin-top: -0.2rem;
 }
 
 .texto-header {
@@ -1603,6 +1603,7 @@ button:hover {
         form button:hover {
             background-color: #d4b2a7;
         }
+
 
 
 
