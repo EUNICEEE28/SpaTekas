@@ -147,7 +147,7 @@ nav ul li ul:before {
   position: static;
   display: flex;
   justify-content: center;
-  margin-bottom: 1rem;
+  margin-bottom: -0.1rem;
 }
 
 .logo {
@@ -1603,6 +1603,7 @@ button:hover {
         form button:hover {
             background-color: #d4b2a7;
         }
+
 
 
 
