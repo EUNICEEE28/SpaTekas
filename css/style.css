@@ -322,7 +322,6 @@ header {
 }
 
 .imagen img { 
-  margin: 0.0625rem;
   width: 100%;
   height: auto;
   max-height: 120vh;
@@ -1603,6 +1602,7 @@ button:hover {
         form button:hover {
             background-color: #d4b2a7;
         }
+
 
 
 
