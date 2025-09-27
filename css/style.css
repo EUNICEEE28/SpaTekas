@@ -1191,6 +1191,172 @@ body {
     flex-shrink: 0; /* Evita que la imagen se encoja mucho */
 }
 
+/* --- Estilos ESPECÍFICOS para la sección .servicio-aromaterapia (Fondo Pálido/Letras Verde Oscuro) --- */
+
+.servicio-aromaterapia {
+    /* Color de fondo: Verde Pálido / Menta Claro */
+    background-color: #F0FFF0; /* Honeydew - muy pálido */
+    padding: 60px 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 40px;
+    font-family: 'Georgia', serif; /* Fuente elegante y calmante */
+}
+
+/* Contenido Principal */
+.servicio-aromaterapia .contenido-servicio {
+    max-width: 600px;
+}
+
+/* Título principal (h2) */
+.servicio-aromaterapia h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #38761D; /* Verde oscuro (Oliva) */
+    border-bottom: 3px solid #6AA84F; /* Verde medio para la línea */
+    padding-bottom: 10px;
+}
+
+/* Párrafos (p) */
+.servicio-aromaterapia p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    color: #4A5D4B; /* Un verde-gris oscuro */
+}
+
+/* Subtítulos de la sección (h3 y h4) */
+.servicio-aromaterapia h3, .servicio-aromaterapia h4 {
+    color: #3D553D; /* Verde bosque */
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.servicio-aromaterapia h3 {
+    font-size: 1.8em;
+}
+
+.servicio-aromaterapia h4 {
+    font-size: 1.4em;
+    border-bottom: 1px dashed #A9BC9C;
+    padding-bottom: 5px;
+}
+
+/* Lista de Beneficios */
+.servicio-aromaterapia .beneficios-lista ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.servicio-aromaterapia .beneficios-lista ul li {
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: #4A5D4B; 
+    position: relative;
+    padding-left: 25px;
+}
+
+/* Ícono de la lista */
+.servicio-aromaterapia .beneficios-lista ul li::before {
+    content: '🍃'; /* Hoja como bullet */
+    font-size: 1.2em;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    position: absolute;
+    left: 0;
+}
+
+/* Estilos para los aceites destacados */
+.servicio-aromaterapia .productos-destacados {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.servicio-aromaterapia .aceite {
+    background-color: #FFFFFF; /* Fondo blanco para las tarjetas de aceites */
+    border: 1px solid #DCDCDC;
+    padding: 10px 15px;
+    border-radius: 5px;
+    flex: 1 1 30%; /* Permite 3 en una línea en pantallas grandes */
+    min-width: 150px;
+}
+
+.servicio-aromaterapia .aceite p {
+    margin: 0;
+    font-size: 0.95em;
+    color: #4A5D4B;
+}
+
+
+/* Botón de servicio */
+.servicio-aromaterapia .boton-servicio {
+    display: inline-block;
+    padding: 14px 35px;
+    background-color: #6AA84F; /* Verde medio */
+    color: #FFFFFF; 
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, box-shadow 0.2s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 30px;
+}
+
+.servicio-aromaterapia .boton-servicio:hover {
+    background-color: #38761D; /* Verde oscuro al pasar el ratón */
+    box-shadow: 0 4px 8px rgba(56, 118, 29, 0.3);
+}
+
+/* Contenedor de la Imagen */
+.servicio-aromaterapia .imagen-servicio {
+    width: 100%;
+    max-width: 400px;
+    min-height: 400px;
+    background-color: #E6FFE6; /* Verde muy claro si no hay imagen */
+    /* Aquí iría tu imagen de fondo */
+    /* background-image: url('ruta/a/tu/imagen-aromaterapia.jpg'); */
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%; /* Borde circular para un toque suave */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.05);
+    flex-shrink: 0;
+}
+
+/* Media Query ESPECÍFICO */
+@media (max-width: 768px) {
+    .servicio-aromaterapia {
+        flex-direction: column;
+        text-align: left;
+        padding: 40px 15px;
+    }
+
+    .servicio-aromaterapia .imagen-servicio {
+        order: -1; 
+        margin-bottom: 30px;
+        min-height: 250px;
+        max-width: 100%;
+        border-radius: 8px; /* Cambia a cuadrado en móviles */
+    }
+
+    .servicio-aromaterapia h2 {
+        font-size: 2em;
+        text-align: center;
+    }
+    
+    .servicio-aromaterapia .productos-destacados {
+        justify-content: center;
+    }
+    
+    .servicio-aromaterapia .aceite {
+        flex: 1 1 45%; /* Dos en una línea en móviles */
+    }
+}
+
 /* Media Query para dispositivos más pequeños */
 @media (max-width: 768px) {
     .servicio-manicure-pedicure {
