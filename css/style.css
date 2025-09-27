@@ -170,7 +170,7 @@ nav ul li ul:before {
 }
 
 /* Lema en móvil */
-.lema {
+.lema-spa {
   font-size: 1em;
   font-style: italic;
   color: white;
@@ -313,7 +313,7 @@ header {
   padding: 1.25rem 0 0.3125rem 0;
 }
 
-.lema { 
+.lema-spa { 
   text-align: center;
   font-size: 1.2em; 
   font-style: italic; 
@@ -1278,6 +1278,7 @@ button:hover {
         form button:hover {
             background-color: #d4b2a7;
         }
+
 
 
 
