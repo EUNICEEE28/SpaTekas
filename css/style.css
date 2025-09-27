@@ -1054,6 +1054,164 @@ body {
     }
 }
 
+/* --- Estilos para la sección de Manicure y Pedicure (Fondo Pálido/Letras Café) --- */
+
+.servicio-manicure-pedicure {
+    /* Color de fondo: Blanco roto, pálido o un beige muy claro */
+    background-color: #F5F5DC; 
+    padding: 60px 20px;
+    display: flex;
+    align-items: flex-start; /* Alinea el contenido y la imagen al inicio */
+    justify-content: space-around;
+    gap: 40px;
+}
+
+.servicio-manicure-pedicure .contenido-servicio {
+    max-width: 600px;
+}
+
+/* Título principal: Café oscuro intenso */
+.servicio-manicure-pedicure h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #4E342E; /* Café muy oscuro, casi chocolate */
+    border-bottom: 3px solid #795548; /* Línea de color café medio */
+    padding-bottom: 10px;
+}
+
+/* Párrafo inicial: Café oscuro */
+.servicio-manicure-pedicure p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    color: #5D4037; 
+}
+
+/* Estilos para los subtítulos de los servicios (h3 y h4) */
+.servicio-manicure-pedicure h3 {
+    font-size: 1.8em;
+    color: #6D4C41; /* Café de intensidad media */
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+.servicio-manicure-pedicure h4 {
+    font-size: 1.4em;
+    color: #4E342E; /* Café oscuro para destacar el nombre del servicio */
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    border-left: 3px solid #795548; /* Pequeña barra lateral para diferenciación */
+}
+
+/* Estilos para el desglose de los tratamientos individuales */
+.servicio-individual {
+    margin-bottom: 30px;
+    padding: 15px;
+    /* Fondo ligeramente diferente para destacar cada artículo, si lo deseas */
+    /* background-color: #FFF8E1; */ 
+    border-radius: 5px;
+}
+
+/* Estilos de la lista de características */
+.servicio-manicure-pedicure ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+.servicio-manicure-pedicure ul li {
+    font-size: 1em;
+    margin-bottom: 8px;
+    color: #5D4037; 
+    /* Ícono personalizado (puedes reemplazar el contenido con un emoji o un ícono) */
+    position: relative;
+    padding-left: 20px;
+}
+
+.servicio-manicure-pedicure ul li::before {
+    content: '★'; /* Estrella o '•' un punto simple */
+    color: #8D6E63; /* Color del bullet: Café más claro */
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    position: absolute;
+    left: 0;
+}
+
+/* Estilos para los tratamientos adicionales */
+.tratamientos-extras {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #EDE7F6; /* Un color pálido de acento (ej. lavanda muy claro) */
+    border-left: 5px solid #795548;
+    border-radius: 5px;
+}
+
+.tratamientos-extras h5 {
+    color: #4E342E;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+
+/* Estilos del botón: Fondo Café, Letras Blancas */
+.servicio-manicure-pedicure .boton-servicio {
+    display: inline-block;
+    padding: 14px 35px;
+    background-color: #6D4C41; 
+    color: #FFFFFF; 
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px; /* Botón más redondeado */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 30px;
+}
+
+.servicio-manicure-pedicure .boton-servicio:hover {
+    background-color: #4E342E; 
+    transform: translateY(-2px); /* Pequeño efecto al pasar el ratón */
+}
+
+/* Estilos para la imagen */
+.servicio-manicure-pedicure .imagen-servicio {
+    width: 100%;
+    max-width: 400px;
+    min-height: 400px; /* Aumentamos el tamaño */
+    background-color: #E0E0E0; /* Fondo gris claro si no hay imagen */
+    /* Aquí iría tu imagen de fondo */
+    /* background-image: url('ruta/a/tu/imagen-manicure.jpg'); */
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0; /* Evita que la imagen se encoja mucho */
+}
+
+/* Media Query para dispositivos más pequeños */
+@media (max-width: 768px) {
+    .servicio-manicure-pedicure {
+        flex-direction: column;
+        text-align: left;
+        padding: 40px 15px;
+    }
+
+    .servicio-manicure-pedicure .imagen-servicio {
+        order: -1; /* Mueve la imagen arriba en móviles */
+        margin-bottom: 30px;
+        min-height: 250px;
+        max-width: 100%;
+    }
+
+    .servicio-manicure-pedicure h2 {
+        font-size: 2em;
+        text-align: center;
+    }
+}
+
 
 /* Media Queries para diseño responsive */
 @media (min-width: 768px) {
