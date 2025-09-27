@@ -393,37 +393,37 @@ h4 {
 
 /*Pie de página*/
 .footer {
-            background-color: #222;
-            color: #fff;
-            padding: 30px 20px;
-            text-align: center;
-            font-family: sans-serif;
-        }
+    background-color: black;
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+    font-family: sans-serif;
+  }
 
-        .social-icons {
-            margin-bottom: 20px;
-        }
+  .social-icons {
+      margin-bottom: 20px;
+  }
 
-        .social-icons a img {
-            width: 30px;
-            margin: 0 10px;
-            transition: transform 0.3s ease;
-        }
+  .social-icons a img {
+      width: 40px;
+      margin: 0 10px;
+      transition: transform 0.3s ease;
+  }
 
-        .social-icons a img:hover {
-            transform: scale(1.2);
-        }
+  .social-icons a img:hover {
+      transform: scale(1.2);
+  }
 
-        .contact-info {
-            margin-bottom: 10px;
-            font-size: 16px;
-        }
+  .contact-info {
+      margin-bottom: 10px;
+      font-size: 16px;
+  }
 
-        .footer-bottom {
-            font-size: 14px;
-            border-top: 1px solid #444;
-            padding-top: 15px;
-        }
+  .footer-bottom {
+      font-size: 14px;
+      border-top: 1px solid #444;
+      padding-top: 15px;
+  }
 
 .mision-vision {
   width: 90%;
@@ -1278,6 +1278,8 @@ button:hover {
         form button:hover {
             background-color: #d4b2a7;
         }
+
+
 
 
 
