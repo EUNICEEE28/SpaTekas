@@ -10,10 +10,10 @@
   width: 100%;
   height: 70px;
   background: #eac1c1;
-  padding: 0 20px;
   position: relative;
+  padding: 0px 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  margin-top: -20px;
+  margin-top: -10px;
 }
 
 .menu {
@@ -26,7 +26,7 @@
 }
 
 nav {
-  height: 100%;
+  height: 110%;
   width: 100%;
 }
 
@@ -134,7 +134,7 @@ nav ul li ul:before {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 2rem;
+  padding-top: 1rem;
   padding-bottom: 1rem;
   position: relative;
   background: black;
@@ -147,13 +147,13 @@ nav ul li ul:before {
   position: static;
   display: flex;
   justify-content: center;
-  margin-bottom: 1rem;
+  margin-bottom: -0.6rem;
 }
 
 .logo {
   max-width: 80%;
   height: auto;
-  margin-top: -0.3rem;
+  margin-top: 1rem;
 }
 
 .texto-header {
@@ -322,7 +322,6 @@ header {
 }
 
 .imagen img { 
-  margin: 0.0625rem;
   width: 100%;
   height: auto;
   max-height: 120vh;
@@ -1604,6 +1603,20 @@ button:hover {
         form button:hover {
             background-color: #d4b2a7;
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

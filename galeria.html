@@ -46,31 +46,36 @@
             </div>
        </div>
     </header>
+
     <style>
         .galeria {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             gap: 20px;
         }
-        .item {
+         .item {
             background: white;
             border-radius: 10px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             overflow: hidden;
+            margin: 2%;
         }
-        .item img {
+         .item img {
             width: 100%;
             height: auto;
         }
         .descripcion {
             padding: 15px;
+            align-items: center;
+            justify-content: center;
         }
-        h2 {
+        #galeria {
             text-align: center;
-            margin-bottom: 20px;
+            font-size: 3rem;
+            margin: 5%;
+            font-family: 'Playfair Display', serif;
         }
-
-        #aromaterapia > img{
+         #aromaterapia > img{
             height: 44%;
         }
 
@@ -86,11 +91,11 @@
             height: 44%;
         }
 
-        #galeria{
-            font-size: 3rem;
-            margin: 5%;
+        #exfolacion > img {
+            height: 44%;
         }
     </style>
+    
     <main>
         <h2 id="galeria">Galería de Instalaciones</h2>
         <div class="galeria">
@@ -98,7 +103,7 @@
                 <img src="imagenes/recepcion.jpg" alt="Recepción del Spa">
                 <div class="descripcion">
                     <h3>Recepción</h3>
-                    <p>La recepción es el primer punto de contacto con nuestros clientes. Decorada con tonos suaves y elementos naturales, crea un ambiente acogedor.</p>
+                    p>La recepción es el primer punto de contacto con nuestros clientes. Decorada con tonos suaves y elementos naturales, crea un ambiente acogedor.</p>
                 </div>
             </div>
             <div class="item">
@@ -127,14 +132,21 @@
                 <img src="imagenes/relajacion.jpg" alt="Área de Relajación">
                 <div class="descripcion">
                     <h3>Área de Relajación</h3>
-                    <p>Nuestros clientes pueden disfrutar de un espacio de relajación con tés herbales y cómodas tumbonas.</p>
+                     <p>Nuestros clientes pueden disfrutar de un espacio de relajación con tés herbales y cómodas tumbonas.</p>
                 </div>
             </div>
             <div class="item" id="estetica">
                 <img src="imagenes/estetica.jpg" alt="Estética de Manos y Pies">
                 <div class="descripcion">
                     <h3>Estética de Manos y Pies</h3>
-                    <p>La zona de estética de manos y pies ofrece manicuras y pedicuras en un entorno relajante.</p>
+                     <p>La zona de estética de manos y pies ofrece manicuras y pedicuras en un entorno relajante.</p>
+                </div>
+            </div>
+            <div class="item" id="exfolacion">
+                <img src="imagenes/exfolacion.jpg" alt="Estética de Manos y Pies">
+                <div class="descripcion">
+                    <h3>Exfoliación Corporal</h3>
+                    <p>Un tratamiento revitalizante que elimina impurezas y células muertas, dejando la piel suave, luminosa y renovada. Acompañado de masajes relajantes, es ideal para estimular la circulación y brindar una experiencia de bienestar total.</p>
                 </div>
             </div>
         </div>
