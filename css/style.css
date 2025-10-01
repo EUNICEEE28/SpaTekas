@@ -1239,6 +1239,7 @@ body {
 }
 
 .servicio-aromaterapia h4 {
+    transform: none;
     font-size: 1.4em;
     border-bottom: 1px dashed #A9BC9C;
     padding-bottom: 5px;
