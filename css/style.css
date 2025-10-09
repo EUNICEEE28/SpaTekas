@@ -126,7 +126,7 @@ nav ul li ul:before {
 }
 
 /* === RESPONSIVE MÓVIL === */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 782px) {
 
   /* Ajustes para header en móvil */
   header {
@@ -135,7 +135,6 @@ nav ul li ul:before {
   align-items: center;
   justify-content: center;
   padding-top: 1rem;
-  padding-bottom: 1rem;
   position: relative;
   background: black;
   color: white;
@@ -206,21 +205,23 @@ nav ul li ul:before {
     transform: scale(1.1);
   }
 
+  nav {
+    position: relative;
+    margin-top: 27%;
+  }
+
   nav > ul {
     flex-direction: column;
     background: #eac1c1;
-    position: fixed;
-    top: 158px;
-    left: 0;
-    width: 100%;
-    height: 0;
+    position: absolute;
+    left: -23px;
+    width: 58%;
     overflow: hidden;
     opacity: 0;
     visibility: hidden;
     transition: all 300ms ease;
     z-index: 100;
     border-radius: 0 0 15px 15px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   }
 
   #check__menu:checked ~ nav > ul {
@@ -247,20 +248,24 @@ nav ul li ul:before {
     font-weight: bold;
     text-transform: uppercase;
     border-bottom: 1px solid #dd9e9e;
+    position: relative;
   }
 
-  nav > ul > li > ul {
-    display: none;
-    flex-direction: column;
-    background: #fbe4e4;
-    padding: 10px 0;
-    border-radius: 0 0 10px 10px;
-  }
-
-  nav > ul > li:active > ul,
-  nav > ul > li:focus-within > ul {
-    display: flex;
-  }
+   /* 1. OCULTAR SUBMENÚ POR DEFECTO (Esto ya lo tenías) */
+    nav > ul > li > ul {
+        display: none; 
+        flex-direction: column;
+        background: #fbe4e4;
+        padding: 10px 0;
+        border-radius: 0 0 10px 10px;
+    }
+  nav > ul > li:focus-within > ul { 
+       display: flex; /* Muestra el submenú */
+       padding-left: 20px;
+    }
+  nav > ul > li > a:focus {
+        background: #dd9e9e; /* Puedes cambiar este color */
+    }
 
   nav ul li ul li a {
     padding: 10px 20px;
@@ -347,7 +352,7 @@ header {
 
 .card img { 
   width: 100%; 
-  height: 26.875rem;
+  height: 100%;
   object-fit: cover; 
 }
 
@@ -1677,6 +1682,43 @@ button:hover {
         form button:hover {
             background-color: #d4b2a7;
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
