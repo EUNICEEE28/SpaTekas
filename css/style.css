@@ -251,17 +251,21 @@ nav ul li ul:before {
     position: relative;
   }
 
-  nav > ul > li > ul {
-    display: none;
-    flex-direction: column;
-    background: #fbe4e4;
-    padding: 10px 0;
-    border-radius: 0 0 10px 10px;
-  }
-
-  nav > ul > li:active > ul, {
-    display: flex;
-  }
+   /* 1. OCULTAR SUBMENÚ POR DEFECTO (Esto ya lo tenías) */
+    nav > ul > li > ul {
+        display: none; 
+        flex-direction: column;
+        background: #fbe4e4;
+        padding: 10px 0;
+        border-radius: 0 0 10px 10px;
+    }
+  nav > ul > li:focus-within > ul { 
+       display: flex; /* Muestra el submenú */
+       padding-left: 20px;
+    }
+  nav > ul > li > a:focus {
+        background: #dd9e9e; /* Puedes cambiar este color */
+    }
 
   nav ul li ul li a {
     padding: 10px 20px;
@@ -1604,6 +1608,7 @@ button:hover {
         form button:hover {
             background-color: #d4b2a7;
         }
+
 
 
 
