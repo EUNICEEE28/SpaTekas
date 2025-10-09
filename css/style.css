@@ -208,14 +208,12 @@ nav ul li ul:before {
   nav {
     position: relative;
     margin-top: 25%;
-    right: 0;
   }
 
   nav > ul {
     flex-direction: column;
     background: #eac1c1;
     position: absolute;
-    position: static;
     width: 52%;
     overflow: hidden;
     opacity: 0;
@@ -1605,6 +1603,7 @@ button:hover {
         form button:hover {
             background-color: #d4b2a7;
         }
+
 
 
 
