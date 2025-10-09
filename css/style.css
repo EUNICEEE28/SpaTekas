@@ -1182,20 +1182,6 @@ body {
     transform: translateY(-2px); /* Pequeño efecto al pasar el ratón */
 }
 
-/* Estilos para la imagen */
-.servicio-manicure-pedicure .imagen-servicio {
-    width: 100%;
-    max-width: 400px;
-    min-height: 400px; /* Aumentamos el tamaño */
-    background-color: #E0E0E0; /* Fondo gris claro si no hay imagen */
-    /* Aquí iría tu imagen de fondo */
-    /* background-image: url('ruta/a/tu/imagen-manicure.jpg'); */
-    background-size: cover;
-    background-position: center;
-    border-radius: 8px;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-    flex-shrink: 0; /* Evita que la imagen se encoja mucho */
-}
 
 /* --- Estilos ESPECÍFICOS para la sección .servicio-aromaterapia (Fondo Pálido/Letras Verde Oscuro) --- */
 
@@ -1319,20 +1305,6 @@ body {
     box-shadow: 0 4px 8px rgba(56, 118, 29, 0.3);
 }
 
-/* Contenedor de la Imagen */
-.servicio-aromaterapia .imagen-servicio {
-    width: 100%;
-    max-width: 400px;
-    min-height: 400px;
-    background-color: #E6FFE6; /* Verde muy claro si no hay imagen */
-    /* Aquí iría tu imagen de fondo */
-    /* background-image: url('ruta/a/tu/imagen-aromaterapia.jpg'); */
-    background-size: cover;
-    background-position: center;
-    border-radius: 50%; /* Borde circular para un toque suave */
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.05);
-    flex-shrink: 0;
-}
 
 /* Media Query ESPECÍFICO */
 @media (max-width: 768px) {
