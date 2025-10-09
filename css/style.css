@@ -214,7 +214,7 @@ nav ul li ul:before {
     flex-direction: column;
     background: #eac1c1;
     position: absolute;
-    left: -15px;
+    left: -22px;
     width: 52%;
     overflow: hidden;
     opacity: 0;
@@ -1604,6 +1604,7 @@ button:hover {
         form button:hover {
             background-color: #d4b2a7;
         }
+
 
 
 
